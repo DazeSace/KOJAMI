@@ -1,0 +1,2882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>KOJAMI - International Consulting</title>
+</head>
+<body>
+<div class="w-full bg-white shadow-lg text-kojami-blue text-font-business select-none sm-navHeight md-navHeight lg:h-16" id="navbar">
+    <div class="flex justify-between h-full" id="innerNavBar">
+        <div class="flex w-1/4 mt-1 mb-2 cursor-pointer" id="navBarLogoContainer" onclick="window.location.href = 'https://kojami.eu/';">
+            <img class="h-24 lg:h-12" src="img/svg/vektor-logo.svg">
+            <div class="" id="navBalLogoText">
+                <h1 class="text-font-kojami text-align-center-navbar text-6xl lg:text-4xl">KOJAMI</h1>
+                <p class="text-serif -mt-4 text-md lg:text-xs">Designer of Your Success</p>
+            </div>
+        </div>
+        <div class="flex w-1/2 justify-end">
+            <div class="uppercase text-md lg:mr-16 font-semibold hidden lg:flex" id="navBarElementsContainer">
+                <div class="flex flex-shrink-0">
+                    <a href="#home" id="navHome">
+                        <div class="h-full px-4 navBarElement" id="navHomeBox">
+                            <p class="pt-4 block" id="navHomeTextEn">Home</p>
+                            <p class="pt-4 hidden" id="navHomeTextDe">Start</p>
+                            <p class="pt-4 hidden" id="navHomeTextCn">首页</p>
+                            <p class="pt-4 hidden" id="navHomeTextRu">Старт</p>
+                            <p class="pt-4 hidden" id="navHomeTextRs">ГЛАВНА</p>
+                            <p class="pt-4 hidden" id="navHomeTextIr">خانه</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#aboutUs" id="navAboutUs">
+                        <div class="h-full px-4 navBarElement" id="navAboutUsBox">
+                            <p class="pt-4 block" id="navAboutUsTextEn">About Us</p>
+                            <p class="pt-4 hidden" id="navAboutUsTextDe">Über uns</p>
+                            <p class="pt-4 hidden" id="navAboutUsTextCn">关于我们</p>
+                            <p class="pt-4 hidden" id="navAboutUsTextRu">о нас</p>
+                            <p class="pt-4 hidden" id="navAboutUsTextRs">О НАМА</p>
+                            <p class="pt-4 hidden" id="navAboutUsTextIr">درباره ما</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#possibilities" id="navPossibilities">
+                        <div class="h-full px-4 navBarElement" id="navPossibilitiesBox">
+                            <p class="pt-4 block" id="navPossibilitiesTextEn">Possibilities</p>
+                            <p class="pt-4 hidden" id="navPossibilitiesTextDe">MÖGLICHKEITEN</p>
+                            <p class="pt-4 hidden" id="navPossibilitiesTextCn">可能的情况</p>
+                            <p class="pt-4 hidden" id="navPossibilitiesTextRu">ВОЗМОЖНОСТИ</p>
+                            <p class="pt-4 hidden" id="navPossibilitiesTextRs">МОГУЋНОСТИ</p>
+                            <p class="pt-4 hidden" id="navPossibilitiesTextIr">فرصت ها</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#whySerb" id="navWhySerb">
+                        <div class="h-full px-4 navBarElement" id="navWhySerbBox">
+                            <p class="pt-4 block" id="navWhySerbiaTextEn">Why Serbia?</p>
+                            <p class="pt-4 hidden" id="navWhySerbiaTextDe">Warum Serbien?</p>
+                            <p class="pt-4 hidden" id="navWhySerbiaTextCn">为什么选择塞尔维亚？</p>
+                            <p class="pt-4 hidden" id="navWhySerbiaTextRu">ПОЧЕМУ СЕРБИЯ?</p>
+                            <p class="pt-4 hidden" id="navWhySerbiaTextRs">ЗАШТО СРБИЈА?</p>
+                            <p class="pt-4 hidden" id="navWhySerbiaTextIr">چرا صربستان؟</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#offer" id="navOffer">
+                        <div class="h-full px-4 navBarElement" id="navOfferBox">
+                            <p class="pt-4 block" id="navOfferTextEn">Offer</p>
+                            <p class="pt-4 hidden" id="navOfferTextDe">Angebot</p>
+                            <p class="pt-4 hidden" id="navOfferTextCn">优惠</p>
+                            <p class="pt-4 hidden" id="navOfferTextRu">ОФЕР</p>
+                            <p class="pt-4 hidden" id="navOfferTextRs">ПОНУДА</p>
+                            <p class="pt-4 hidden" id="navOfferTextIr">پیشنهاد</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#contact" id="navContact">
+                        <div class="h-full px-4 navBarElement" id="navContactBox">
+                            <p class="pt-4 block" id="navContactTextEn">Contact</p>
+                            <p class="pt-4 hidden" id="navContactTextDe">Kontakt</p>
+                            <p class="pt-4 hidden" id="navContactTextCn">联系我们</p>
+                            <p class="pt-4 hidden" id="navContactTextRu">КОНТАКТ</p>
+                            <p class="pt-4 hidden" id="navContactTextRs">КОНТАКТ</p>
+                            <p class="pt-4 hidden" id="navContactTextIr">مخاطب</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#partner" id="navPartner">
+                        <div class="h-full px-4 navBarElement" id="navPartnerBox">
+                            <p class="pt-4 block" id="navPartnersTextEn">Partners</p>
+                            <p class="pt-4 hidden" id="navPartnersTextDe">Partner</p>
+                            <p class="pt-4 hidden" id="navPartnersTextCn">合作伙伴</p>
+                            <p class="pt-4 hidden" id="navPartnersTextRu">ПАРТНЕРЫ</p>
+                            <p class="pt-4 hidden" id="navPartnersTextRs">ПАРТНЕРИ</p>
+                            <p class="pt-4 hidden" id="navPartnersTextIr">شرکا</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-1/4 lg:w-1/12 justify-center mr-10 hidden lg:block" onmouseenter="toggleLangs()" onmouseleave="toggleLangs()">
+            <div class="flex">
+                <img src="img/svg/translation.svg" alt="lang" class="cursor-pointer mt-2 mx-auto w-1/3 hidden lg:block" >
+            </div>
+        </div>
+        <div class="flex w-1/4 lg:w-1/12 cursor-pointer justify-center mr-10 lg:hidden block">
+            <div class="flex justify-end">
+                <div class="w-1/2" ontouchstart="openNav()">
+                    <img src="img/svg/menu.svg" alt="lang" class="px-3 mt-4 rounded-lg border-4 border-kojami-blue" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between">
+        <div class="flex w-1/4 mt-1 mb-2 invisible">
+            <img class="h-24 lg:h-12" src="img/svg/vektor-logo.svg">
+            <div class="" >
+                <h1 class="text-font-kojami text-align-center-navbar text-6xl lg:text-4xl">KOJAMI</h1>
+                <p class="text-serif -mt-4 text-md lg:text-xs">Designer of Your Success</p>
+            </div>
+        </div>
+        <div class="flex w-1/2 justify-end invisible">
+            <div class="uppercase text-md lg:mr-16 font-semibold hidden lg:flex" >
+                <div class="flex flex-shrink-0">
+                    <a href="#home" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4" ></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#aboutUs" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#possibilities" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#whySerb" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#offer" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#contact" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="#partner" >
+                        <div class="h-full px-4 navBarElement" >
+                            <p class="pt-4"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-1/4 lg:w-1/12 cursor-pointer mr-10">
+            <div class="hidden flex-col justify-center text-center text-3xl lg:text-lg font-semibold w-full pb-2 text-font-business bg-white shadow-lg" onmouseenter="toggleLangs()" onmouseleave="toggleLangs()" id="langBox">
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('en')">
+                    <div class="w-1/5 -mr-4">
+                        <img src="img/flags/united-states-of-america.svg">
+                    </div>
+                    <p class="text-center -ml-4">US</p>
+                </div>
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('de')">
+                    <div class="w-1/5 -mr-4">
+                        <img src="img/flags/germany(1).svg">
+                    </div>
+                    <p class="text-center -ml-4">DE</p>
+                </div>
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('cn')">
+                    <div class="w-1/5 -mr-4">
+                        <img src="img/flags/china.svg">
+                    </div>
+                    <p class="text-center -ml-4">CN</p>
+                </div>
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('rs')">
+                    <div class="w-1/5 -mr-4">
+                        <img src="img/flags/serbia.svg">
+                    </div>
+                    <p class="text-center -ml-4">RS</p>
+                </div>
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('ru')">
+                    <div class="w-1/5 ml-1 -mr-4">
+                        <img src="img/flags/russia.svg">
+                    </div>
+                    <p class="text-center -ml-4">RU</p>
+                </div>
+                <div class="flex navBarElement justify-evenly" onclick="setLanguage('ir')">
+                    <div class="w-1/5 -mr-4">
+                        <img src="img/flags/iran.svg">
+                    </div>
+                    <p class="text-center -ml-4">IR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="text-5xl text-font-business truncate text-kojami-blue pt-6 sidenav">
+    <div class="flex">
+        <div class="" onclick="closeNav()">
+            <img src="img/svg/cancel.svg" class="float-right object-contain w-1/6 mr-4">
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <div class="uppercase">
+            <a href="#home" id="navSlideHome" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideHomeBox">
+                    <p class="py-2 block" id="navSlideHomeTextEn">Home</p>
+                    <p class="py-2 hidden" id="navSlideHomeTextDe">Start</p>
+                    <p class="py-2 hidden" id="navSlideHomeTextCn">首页</p>
+                    <p class="py-2 hidden" id="navSlideHomeTextRu">Старт</p>
+                    <p class="py-2 hidden" id="navSlideHomeTextRs">КУЋА</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlideHomeTextIr">خانه</p>
+                </div>
+            </a>
+            <a href="#aboutUs" id="navSlideAboutUs" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideAboutUsBox">
+                    <p class="py-2 block" id="navSlideAboutUsTextEn">About Us</p>
+                    <p class="py-2 hidden" id="navSlideAboutUsTextDe">Über uns</p>
+                    <p class="py-2 hidden" id="navSlideAboutUsTextCn">关于我们</p>
+                    <p class="py-2 hidden" id="navSlideAboutUsTextRu">о нас</p>
+                    <p class="py-2 hidden" id="navSlideAboutUsTextRs">О НАМА</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlideAboutUsTextIr">درباره ما</p>
+                </div>
+            </a>
+            <a href="#possibilities" id="navSlidePossibilities" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlidePossibilitiesBox">
+                    <p class="py-2 block" id="navSlidePossibilitiesTextEn">Possibilities</p>
+                    <p class="py-2 hidden" id="navSlidePossibilitiesTextDe">MÖGLICHKEITEN</p>
+                    <p class="py-2 hidden" id="navSlidePossibilitiesTextCn">可能的情况</p>
+                    <p class="py-2 hidden" id="navSlidePossibilitiesTextRu">ВОЗМОЖНОСТИ</p>
+                    <p class="py-2 hidden" id="navSlidePossibilitiesTextRs">МОГУЋНОСТИ</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlidePossibilitiesTextIr">ممکن ها</p>
+                </div>
+            </a>
+            <a href="#whySerb" id="navSlideWhySerb" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideWhySerbBox">
+                    <p class="py-2 block" id="navSlideWhySerbiaTextEn">Why Serbia?</p>
+                    <p class="py-2 hidden" id="navSlideWhySerbiaTextDe">Warum Serbien?</p>
+                    <p class="py-2 hidden" id="navSlideWhySerbiaTextCn">为什么选择塞尔维亚？</p>
+                    <p class="py-2 hidden" id="navSlideWhySerbiaTextRu">ПОЧЕМУ СЕРБИЯ?</p>
+                    <p class="py-2 hidden" id="navSlideWhySerbiaTextRs">ЗАШТО СРБИЈА?</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlideWhySerbiaTextIr">چرا صربستان؟</p>
+                </div>
+            </a>
+            <a href="#offer" id="navSlideOffer">
+                <div class="h-full px-4 navBarElement" onclick="closeNav()" id="navSlideOfferBox">
+                    <p class="py-2 block" id="navSlideOfferTextEn">Offer</p>
+                    <p class="py-2 hidden" id="navSlideOfferTextDe">Angebot</p>
+                    <p class="py-2 hidden" id="navSlideOfferTextCn">优惠</p>
+                    <p class="py-2 hidden" id="navSlideOfferTextRu">ОФЕР</p>
+                    <p class="py-2 hidden" id="navSlideOfferTextRs">ПОНУДА</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlideOfferTextIr">پیشنهاد</p>
+                </div>
+            </a>
+            <a href="#contact" id="navSlideContact" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideContactBox">
+                    <p class="py-2 block" id="navSlideContactTextEn">Contact</p>
+                    <p class="py-2 hidden" id="navSlideContactTextDe">Kontakt</p>
+                    <p class="py-2 hidden" id="navSlideContactTextCn">联系我们</p>
+                    <p class="py-2 hidden" id="navSlideContactTextRu">КОНТАКТ</p>
+                    <p class="py-2 hidden" id="navSlideContactTextRs">КОНТАКТ</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlideContactTextIr">مخاطب</p>
+                </div>
+            </a>
+            <a href="#partner" id="navSlidePartner" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlidePartnerBox">
+                    <p class="py-2 block" id="navSlidePartnersTextEn">Partners</p>
+                    <p class="py-2 hidden" id="navSlidePartnersTextDe">Partner</p>
+                    <p class="py-2 hidden" id="navSlidePartnersTextCn">合作伙伴</p>
+                    <p class="py-2 hidden" id="navSlidePartnersTextRu">ПАРТНЕРЫ</p>
+                    <p class="py-2 hidden" id="navSlidePartnersTextRs">ПАРТНЕРИ</p>
+                    <p class="py-2 hidden text-right mr-2" id="navSlidePartnersTextIr">شرکا</p>
+                </div>
+            </a>
+        </div>
+        <div class="flex justify-center flex-wrap px-4 text-2xl mt-16">
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('en')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/united-states-of-america.svg">
+                </div>
+                <p class="text-center -ml-4">US</p>
+            </div>
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('de')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/germany(1).svg">
+                </div>
+                <p class="text-center -ml-4">DE</p>
+            </div>
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('cn')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/china.svg">
+                </div>
+                <p class="text-center -ml-4">CN</p>
+            </div>
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('rs')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/serbia.svg">
+                </div>
+                <p class="text-center -ml-4">RS</p>
+            </div>
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('ru')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/russia.svg">
+                </div>
+                <p class="text-center -ml-4">RU</p>
+            </div>
+            <div class="flex navBarElement justify-evenly w-2/5" onclick="setLanguage('ir')">
+                <div class="w-1/5 -mr-4">
+                    <img src="img/flags/iran.svg">
+                </div>
+                <p class="text-center -ml-4">IR</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-navmt lg:mt-16 relative select-none" id="carousel">
+    <div class="slideshow" id="home">
+        <div class="w-full">
+            <img src="img/carousel/shenzhen.jpg" class="md-max-h lg-max-h w-full object-cover" alt="shenzhen">
+        </div>
+        <div class="w-full">
+            <img src="img/carousel/singapur.jpg" class="md-max-h lg-max-h w-full object-cover" alt="singapur">
+        </div>
+        <div class="w-full">
+            <img src="img/carousel/teheran.jpg" class="md-max-h lg-max-h w-full object-cover" alt="teheran">
+        </div>
+        <div class="w-full">
+            <img src="img/carousel/frankfurt.jpg" class="md-max-h lg-max-h w-full object-cover" alt="frankfurt">
+        </div>
+        <div class="w-full">
+            <img src="img/carousel/moscow.jpg" class="md-max-h lg-max-h w-full object-cover" alt="moscow">
+        </div>
+    </div>
+    <div class="absolute imageTextSkyline w-full">
+        <h1 id="kojamiSkyline" class="text-font-kojami text-white text-right -mb-16 lg:-mb-24 mr-6 lg:mr-24 kojami-skyline-mb">KOJAMI</h1>
+        <h1 id="textSkyline" class="text-white text-right -mb-10 mr-6 lg:mr-24">International Consulting</h1>
+        <h1 id="subTextSkyline" class="text-white text-right mr-6 lg:mr-24">Designer of Your Success</h1>
+        <div class="md-arrow-mt lg:hidden">
+            <a href="#aboutUs" class="w-1/12">
+                <img src="img/svg/down-arrow-double.svg" class="w-1/12 mx-auto" alt="icon">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="max-w mx-auto text-kojami-blue text-font-business select-none tracking-tighter" id="body">
+    <div id="aboutUs">
+        <div class="mt-32 mx-auto w-11/12 block" id="aboutUsEn">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                <span class="text-font-kojami">KOJAMI</span>
+                International Consulting <br class="hidden lg:block"> based in Belgrade - Serbia
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                We aim to support customers from all over the world in finding profitable solutions for their
+                cost-intensive business processes, making them more efficient and successful.
+            </p>
+        </div>
+        <div class="mt-32 mx-auto w-11/12 hidden" id="aboutUsCn">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                <span class="text-font-kojami">KOJAMI</span>
+                国际咨询公司总部位于塞尔维亚贝尔格莱德,
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                致力于帮助世界各地的客户为其成本密集型的业务流程找到盈利的解决方案，使其更加高效和成功。
+            </p>
+        </div>
+        <div class="mt-32 mx-auto w-11/12 hidden" id="aboutUsDe">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                <span class="text-font-kojami">KOJAMI</span>
+                International Consulting <br class="hidden lg:block">  mit Sitz in Belgrad - Serbien
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                Wir haben uns zum Ziel gesetzt, Kunden aus aller Welt dabei zu unterstützen,
+                profitable Lösungen für ihre kostenintensiven Geschäftsprozesse zu finden und diese
+                effizienter und erfolgreicher zu gestalten.
+            </p>
+        </div>
+        <div class="mt-32 mx-auto w-11/12 hidden" id="aboutUsRs">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                <span class="text-font-kojami">KOJAMI</span>
+                International Consulting <br class="hidden lg:block"> са седиштем у Београду
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                настоји да подржи клијенте из целога света у проналажењу профитабилних решења за њихове пословне процесе, чинећи их ефикасним и успешним.
+            </p>
+        </div>
+        <div class="mt-32 mx-auto w-11/12 hidden" id="aboutUsRu">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                <span class="text-font-kojami">KOJAMI</span> International Consulting <br class="hidden lg:block"> расположенная в Белграде - Сербия,
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                стремится поддерживать клиентов со всего мира в поиске выгодных решений для их затратных бизнес-процессов, делая их более эффективными и успешными.
+            </p>
+        </div>
+        <div class="mt-32 mx-auto w-11/12 hidden" id="aboutUsIr">
+            <p class="text-font-business md-headLine lg:text-5xl mb-6 text-center">
+                شرکت مشاوره بین المللی <span class="text-font-kojami">KOJAMI</span> ، مستقر در بلگراد - صربستان ،
+            </p>
+            <p class="text-font-business text-4xl md-subHeadLine text-center">
+                با هدف پشتیبانی از مشتریان از سراسر جهان در یافتن راه حل های سودآور برای فرآیندهای تجاری با هزینه زیاد ، باعث کارآیی و موفقیت بیشتر آنها می شود.
+            </p>
+        </div>
+    </div>
+    <div class="bg-kojami-blue h-05 w-3/5 lg:w-2/5 mx-auto my-16">
+
+    </div>
+    <div class="mb-16 cursor-default tracking-normal" id="possibilities">
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business block" id="possibilitiesHeadEn">Your Possibilities</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business hidden" id="possibilitiesHeadCn">您的可能性</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business hidden" id="possibilitiesHeadDe">Ihre Möglichkeiten</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business hidden" id="possibilitiesHeadIr">ممکن ها</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business hidden" id="possibilitiesHeadRu">Возможности</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 text-font-business hidden" id="possibilitiesHeadRs">Могућности</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business block" id="possibilitiesSubEn">Business process outsourcing to Serbia</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business hidden" id="possibilitiesSubCn">将业务流程外包给塞尔维亚</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business hidden" id="possibilitiesSubDe">Auslagerung von Geschäftsprozessen nach Serbien</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business hidden" id="possibilitiesSubIr">برون سپاری فرآیند تجارت به صربستان ، مانند :</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business hidden" id="possibilitiesSubRu">Аутсорсинг бизнес-процессов в Сербии, например:</h1>
+        <h1 class="text-4xl md-subHeadLine text-center mb-16 text-font-business hidden" id="possibilitiesSubRs">Пренос пословних процеса у Србији, на пример:</h1>
+        <div class="flex justify-center flex-wrap mx-12" id="offerTileBox">
+            <div class="lg:hidden flex flex-col" id="mobileTiles">
+                <div class="flex justify-center mb-4">
+                    <div class="h-64 w-64 offerTileWidth offerTileHeight bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/tools.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 block" id="mobileTile1En">Manufacturing partnership for SMEs with
+                                KOJAMI</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 hidden" id="mobileTile1Cn">与KOJAMI建立中小企业生产合作关系</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 hidden" id="mobileTile1De">Fertigungspartnerschaft für KMUs mit KOJAMI</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 hidden" id="mobileTile1Ir">مشارکت تولیدی برای SME  ها  با شرکت KOJAMI</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 hidden" id="mobileTile1Rs">Производно партнерство за мала и средња предузећа са КОЈАМИ</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-4 font-bold pb-3 hidden" id="mobileTile1Ru">Производственное партнерство для малого и среднего бизнеса с KOJAMI</p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 offerTileWidth offerTileHeight bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/nut.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 block" id="mobileTile2En">Parts production for SMEs (external
+                                manufacturer)</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 hidden" id="mobileTile2Cn">中小企业的零部件制造</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 hidden" id="mobileTile2De">Teilefertigung für KMUs</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 hidden" id="mobileTile2Ir">تولید قطعات برای SME ها (تولید کننده خارجی)</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 hidden" id="mobileTile2Rs">Производња компонената за мала и средња предузећа</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-3 hidden" id="mobileTile2Ru">Производственное партнерство для малого и среднего бизнеса с KOJAMI</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center mb-4">
+                    <div class="h-64 w-64 offerTileWidth offerTileHeight bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/wrench.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 block" id="mobileTile3En">Complete manufacturing of assemblies for SMEs
+                                <br> (external manufacturer)</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 hidden" id="mobileTile3Cn">为中小型企业提供完整的组件生产
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 hidden" id="mobileTile3De">Komplette Fertigung von Baugruppen für KMUs </p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 hidden" id="mobileTile3Ir">ساخت کامل مجموعه برای  KOJAMI (تولید کننده خارجی)</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 hidden" id="mobileTile3Rs">Комплетна израда склопова за мала и средња предузећа</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-3 font-bold pb-2 hidden" id="mobileTile3Ru">Полное изготовление узлов для малых и средних предприятий </p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 offerTileWidth h-full bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/office-building.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold block" id="mobileTile4En">Subsidiary founding</p>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold hidden" id="mobileTile4Cn">子公司的成立</p>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold hidden" id="mobileTile4De">Gründung von Tochtergesellschaften</p>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold hidden" id="mobileTile4Ir">  سرمایه گذاری سوبسیدی</p>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold hidden" id="mobileTile4Rs">Оснивање подружница</p>
+                            <p class="text-white text-center text-3xl mx-2 md-mb-55 pb-1 font-bold hidden" id="mobileTile4Ru">Учреждение дочерних предприятий</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="h-64 w-64 offerTileWidth offerTileHeight bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/cooperation.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 block" id="mobileTile5En">Joint venture with local companies</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile5Cn">与当地公司的合资企业</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile5De">Joint Venture mit lokalen Unternehmen</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile5Ir">سرمایه گذاری مشترک با شرکت های محلی</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile5Rs">Заједничко улагање са локалним компанијама</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile5Ru">Совместное предприятие с местными компаниями</p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 offerTileWidth offerTileHeight bg-kojami-blue mx-2">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-2/5 mx-auto mt-16 mb-10">
+                                <img src="img/svg/accounting.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 block" id="mobileTile6En">Accounting according to EUROPEAN / US
+                                standards</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile6Cn">根据欧盟/美国标准进行核算</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile6De">Rechnungslegung nach EU / US-Normen</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile6Ir">حسابداری براساس استاندرهای اروپا و آمریکا</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile6Rs">Рачуноводство по европским и америчким стандардима</p>
+                            <p class="text-white text-center text-3xl -mt-1 mx-2 font-bold pb-3 hidden" id="mobileTile6Ru">Бухгалтерский учет по европейскому и американскому стандартам</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:flex flex-col" id="desktopTiles">
+                <div class="flex">
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/tools.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile1En">Manufacturing partnership for SMEs with
+                                KOJAMI</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile1Cn">与KOJAMI建立中小企业生产合作关系</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile1Ir">مشارکت تولیدی برای SME  ها  با شرکت KOJAMI</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile1De">Fertigungspartnerschaft für KMUs mit KOJAMI</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile1Rs">Производно партнерство за мала и средња предузећа са КОЈАМИ</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile1Ru">Производственное партнерство для малого и среднего бизнеса с KOJAMI</p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/nut.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile2En">Parts production for SMEs (external
+                                manufacturer)</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile2Cn">中小企业的零部件制造</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile2De">Teilefertigung für KMUs</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile2Ir">تولید قطعات برای SME ها (تولید کننده خارجی)</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile2Rs">Производња компонената за мала и средња предузећа</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile2Ru">Производственное партнерство для малого и среднего бизнеса с KOJAMI</p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/wrench.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile3En">Complete manufacturing of assemblies for SMEs
+                                <br> (external manufacturer)</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile3Cn">为中小型企业提供完整的组件生产</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile3De">Komplette Fertigung von Baugruppen für KMUs </p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile3Ir">ساخت کامل مجموعه برای  KOJAMI (تولید کننده خارجی)</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile3Rs">Комплетна израда склопова за мала и средња предузећа</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile3Ru">Полное изготовление узлов для малых и средних предприятий</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/office-building.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile4En">Subsidiary founding</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile4Cn">子公司的成立</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile4De">Gründung von Tochtergesellschaften</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile4Ir">سرمایه گذاری سوبسیدی</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile4Rs">Оснивање подружница</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile4Ru">Учреждение дочерних предприятий </p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/cooperation.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile5En">Joint venture with local companies</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile5Cn">与当地公司的合资企业</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile5De">Joint Venture mit lokalen Unternehmen</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile5Ir">سرمایه گذاری مشترک با شرکت های محلی</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile5Rs">Заједничко улагање са локалним компанијама</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile5Ru">Совместное предприятие с местными компаниями</p>
+                        </a>
+                    </div>
+                    <div class="h-64 w-64 bg-kojami-blue mx-2 my-2 offerBox">
+                        <a href="#contact" class="h-full w-full cursor-default">
+                            <div class="w-1/3 mx-auto mt-12 mb-10">
+                                <img src="img/svg/accounting.svg" alt="icon">
+                            </div>
+                            <p class="text-white text-center mx-2 font-bold block" id="desktopTile6En">Accounting according to EUROPEAN / US
+                                standards</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile6Cn">根据欧盟/美国标准进行核算</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile6De">Rechnungslegung nach EU / US-Normen</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile6Ir">حسابداری براساس استاندرهای اروپا و آمریکا</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile6Rs">Рачуноводство по европским и америчким стандардима</p>
+                            <p class="text-white text-center mx-2 font-bold hidden" id="desktopTile6Ru">Бухгалтерский учет по европейскому и американскому стандартам</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filler bg-kojami-blue h-05 w-3/5 lg:w-2/5 mx-auto my-20">
+
+    </div>
+    <div class="tracking-normal" id="whySerb">
+        <h1 class="text-5xl md-headLine text-center mb-6 block" id="whySerbEn">Why Serbia?</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 hidden" id="whySerbCn">为什么选择塞尔维亚</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 hidden" id="whySerbDe">Warum Serbien?</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 hidden" id="whySerbIr">چرا صربستان</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 hidden" id="whySerbRs">Зашто Србија?</h1>
+        <h1 class="text-5xl md-headLine text-center mb-6 hidden" id="whySerbRu">Почему Сербия?</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx lg:ml-0 block" id="locationEn">Location</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx lg:ml-0 hidden" id="locationCn">位置</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx lg:ml-0 hidden" id="locationDe">Standort</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx text-right lg:ml-0 hidden" id="locationIr">موقعیت مکانی</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx lg:ml-0 hidden" id="locationRs">Локација</h1>
+        <h1 class="text-4xl mb-6 ml-10 mid-size-mx lg:ml-0 hidden" id="locationRu">Местоположение</h1>
+        <div class="flex mb-16 mx-10 mid-size-mx lg:mx-0">
+            <div class="flex flex-col w-3/5 pr-12">
+                <p class="text-3xl lg:text-2xl mt-10 block" id="location1En">
+                    Serbia´s optimal geographic location keeps you close to your customers.
+                    Well developed transportation and logistics industry has the ability to serve most EU markets by
+                    road in less than 24 hours.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 block" id="location2En">
+                    Thus KOJAMI provides the means to improve your competitive ability significantly on a global
+                    scale.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-10 hidden" id="location1Cn">
+                    塞尔维亚的最佳地理位置为您提供了接近客户的机会。完善的运输和物流基础设施使他们能够在24小时内服务于大多数欧盟市场。
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 hidden" id="location2Cn">
+                    因此，KOJAMI为您提供了在全球范围内显著提高竞争力的机会。
+                </p>
+                <p class="text-3xl lg:text-2xl mt-10 hidden" id="location1De">
+                    Die optimale geografische Lage Serbiens bietet Ihnen Nähe zu ihren Kunden.
+                    Die gut entwickelte Transport- und Logistikinfrastruktur ermöglich ihnen,
+                    die meisten EU-Märkte in weniger als 24 Stunden zu bedienen.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 hidden" id="location2De">
+                    Somit bietet KOJAMI die Möglichkeit, Ihre Wettbewerbsfähigkeit
+                    auf globaler Ebene deutlich zu verbessern.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-10 hidden" id="location1Ru">
+                    Оптимальное географическое положение Сербии держит Вас ближе к Вашим клиентам.
+                    Хорошо развитая отрасль транспорта и логистики имеет возможность обслуживать большинство рынков ЕС автомобильным транспортом менее чем за 24 часа.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 hidden" id="location2Ru">
+                    Таким образом, KOJAMI предоставляет средства для значительного повышения вашей конкурентоспособности в мировом масштабе.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-10 hidden" id="location1Rs">
+                    Оптимални географски положај у Србији приближава вас купцима.
+                    Добро развијена индустрија транспорта и логистике има могућност да већу трговину ЕУ цестом услуга за најмање 24 сата.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 hidden" id="location2Rs">
+                    На овај начин, КОЈАМИ пружа средства за значајно повећање ваше глобалне конкурентности.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-10 text-right hidden" id="location1Ir">
+                    موقعیت جغرافیایی صربستان این امکان را به شما میدهد که در نزدیکی مشتریان بین الملی خود فعالیت داشته باشید. حمل و نقل مدرن و توسعه یافته این امکان را برای شما فراهم میکند تا کمتر از 24 ساعت به اکثر بازارهای اروپایی دسترسی داشته باشید.
+                </p>
+                <p class="text-3xl lg:text-2xl mt-8 text-right hidden" id="location2Ir">
+                    بدینوسیله KOJAMI ابزاری را برای بهبود توانایی رقابت شما در مقیاس جهانی فراهم می کند.
+                </p>
+            </div>
+            <div class="w-2/5 mt-16 lg:mt-0">
+                <img src="img/whySerbia/location-karte.jpg" alt="location" class="object-contain mx-auto">
+            </div>
+        </div>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 block" id="freeTradeEn">Free Trade Arrangements</h1>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 hidden" id="freeTradeCn">自由贸易协定</h1>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 hidden" id="freeTradeDe">Freihandelsabkommen</h1>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 hidden" id="freeTradeRu">соглашения о свободной торговле</h1>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 hidden" id="freeTradeRs">Cпоразуми о слободној трговини</h1>
+        <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 text-right hidden" id="freeTradeIr">توافق نامه های تجارت آزاد</h1>
+        <div class="mb-16 flex flex-col lg:flex-row mx-10 mid-size-mx lg:mx-0">
+            <div class="lg:w-2/3 lg:mt-16">
+                <img src="img/whySerbia/free-trade-karte.jpg" alt="location" class="object-contain">
+            </div>
+            <div class="flex flex-col lg:w-1/3">
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 lg:mt-10 block" id="freeTrade1En">
+                    Serbia is a member of the Black Sea Economic Cooperation and the Central European Free Trade
+                    Agreement (CEFTA).
+                    Serbia is the only European country, outside the CIS, that has a free trade agreement with
+                    Russia
+                    as well as with the Eurasian Economic Union (EAEU).</p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 mt-6 block" id="freeTrade2En">
+                    Several other free trade agreements are currently in force with Kazakhstan, Belarus and Turkey,
+                    as well as with the European Free Trade Association. This opens the markets of the Serbian
+                    economy,
+                    under largely liberalised conditions, to a total of about 1.1 billion people.
+                </p>
+                <p class="text-3xl lg:text-2xl lg:ml-4 lg:mt-10 hidden" id="freeTrade1Cn">
+                    塞尔维亚是黑海经济合作组织和中欧自由贸易协定的成员。塞尔维亚是独联体以外唯一与俄罗斯和欧亚经济联盟（EAEU）都有自由贸易协定的欧洲国家。</p>
+                <p class="text-3xl lg:text-2xl lg:ml-4 mt-6 hidden" id="freeTrade2Cn">
+                    目前与哈萨克斯坦、白俄罗斯和土耳其以及欧洲自由贸易联盟的其他几项自由贸易协定正在生效。这使塞尔维亚经济的市场在基本上自由化的条件下，向总共约11亿人开放。
+                </p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 lg:mt-10 hidden" id="freeTrade1De">
+                    Serbien ist Mitglied der wirtschaftlichen Zusammenarbeit im Schwarzmeerraum und des Mitteleuropäischen
+                    Freihandelsabkommens (CEFTA). Serbien ist das einzige europäische Land außerhalb der GUS,
+                    das sowohl mit Russland als auch mit der Eurasischen Wirtschaftsunion (EAEU) ein Freihandelsabkommen hat.</p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 mt-6 hidden" id="freeTrade2De">
+                    Mehrere andere Freihandelsabkommen sind derzeit mit Kasachstan, Belarus und der Türkei sowie mit der
+                    Europäischen Freihandelsassoziation in Kraft. Damit werden die Märkte der serbischen Wirtschaft
+                    unter weitgehend liberalisierten Bedingungen für insgesamt rund 1,1 Milliarden Menschen geöffnet.
+                </p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 lg:mt-10 hidden" id="freeTrade1Ru">
+                    Сербия является членом Черноморского экономического сотрудничества и Центральноевропейского соглашения о свободной торговле (ЦЕФТА).
+                    Сербия является единственной европейской страной за пределами СНГ, которая имеет соглашение о свободной торговле с Россией, а также с Евразийским экономическим союзом (ЕАЭС).</p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 mt-6 hidden" id="freeTrade2Ru">
+                    В настоящее время действует ряд других соглашений о свободной торговле с Казахстаном, Белоруссией и Турцией, а также с Европейской ассоциацией свободной торговли.
+                    Это открывает рынки сербской экономики, в значительной степени либерализованные, для в общей сложности около 1,1 миллиард человек.
+                </p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 lg:mt-10 hidden" id="freeTrade1Rs">
+                    Србија је чланица Црноморске економске сарадње и Централноевропског споразума о слободној трговини (ЦЕФТА).
+                    Србија је једина европска земља ван ЗНД која има уговор о слободној трговини са Русијом, као и са Евроазијском економском унијом (ЕАЕУ).</p>
+                <p class="text-justify text-3xl lg:text-2xl lg:ml-4 mt-6 hidden" id="freeTrade2Rs">
+                    Тренутно је на снази низ других споразума о слободној трговини са Казахстаном, Белорусијом и Турском, као и са Европском асоцијацијом за слободну трговину.
+                    Ово отвара тржишта за српску економију, углавном либерализовану, за укупно око 1,1 милијарду људи.
+                </p>
+                <p class="text-3xl lg:text-2xl lg:ml-4 lg:mt-16 hidden text-right" id="freeTrade1Ir">
+                    صربستان عضو سازمان همکاری اقتصادی دریای سیاه(  BSEC )   و توافق نامه تجارت آزاد اروپای مرکزی ( CEFTA) است. صربستان تنها کشور اروپایی خارج از  CIS است که با روسیه و همچنین با اتحادیه اقتصادی اوراسیا ( EAEU) توافق نامه تجارت آزاد دارد.
+                </p>
+                <p class="text-3xl lg:text-2xl lg:ml-4 mt-6 hidden text-right" id="freeTrade2Ir">
+                    چندین توافق نامه تجارت آزاد دیگر در حال حاضر با قزاقستان ، بلاروس و ترکیه و همچنین با انجمن تجارت آزاد اروپا در حال اجراست. این امر فضای تجارت آزاد صربستان برای جمعیتی بالغ بر 1.1 میلیارد نفر را سبب میشود.
+                </p>
+
+            </div>
+        </div>
+        <div class="flex flex-col" id="costSavingsEn">
+                <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Cost Savings</h1>
+                <p class="text-3xl lg:text-2xl mt-10 block">
+                    According to EUROSTAT, Serbia has the lowest costs of electricity, gas, other
+                    fuels and landline telephony among 37 European states.
+                </p>
+                <div class="flex flex-col mt-10 mr-10">
+                    <div class="flex">
+                        <div class="flex w-2/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/1-LaborEn.png">
+                            </div>
+                        </div>
+                        <div class="flex w-1/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/2-LaborEn.JPG" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex w-2/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/1-ElectricityEn.png">
+                            </div>
+                        </div>
+                        <div class="flex w-1/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/2-ElectricityEn.JPG" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex w-2/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/1-OfficeSpaceEn.png">
+                            </div>
+                        </div>
+                        <div class="flex w-1/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/2-OfficeSpaceEn.JPG" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex w-2/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/1-TelecommunicationEn.png">
+                            </div>
+                        </div>
+                        <div class="flex w-1/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/2-TelecommunicationEn.JPG" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex w-2/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/1-TransportEn.png">
+                            </div>
+                        </div>
+                        <div class="flex w-1/3">
+                            <div class="">
+                                <img src="img/savings/SET%20EN/2-TransportEn.JPG" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-3xl lg:text-2xl mt-10 block" id="costSave2En">
+                    KOJAMI is your entry-ticket to all these benefits.
+                    As a partner of management, we advise our customers from strategy development to pragmatic
+                    implementation.
+                </p>
+            </div>
+        <div class="flex flex-col hidden" id="costSavingsDe">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Kostensenkung</h1>
+            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+                Laut EUROSTAT hat Serbien unter 37 europäischen Staaten die niedrigsten Kosten für
+                Strom, Gas und andere Brennstoffe, sowie Telefonie.
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/1-LaborDe.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/2-LaborDe.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/1-ElectricityDe.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/2-ElectricityDe.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/1-OfficeSpaceDe.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/2-OfficeSpaceDe.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/1-TelecommunicationDe.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/2-TelecommunicationDe.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/1-TransportDe.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20DE/2-TransportDe.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+                KOJAMI ist Ihr Eintrittsticket zu all diesen Vorteilen.
+                Als Partner des Managements beraten wir unsere Kunden von der Strategieentwicklung bis zur pragmatischen Umsetzung.
+            </p>
+        </div>
+        <div class="flex flex-col hidden" id="costSavingsCn">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">降低成本</h1>
+            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+                根据欧统局的数据，塞尔维亚是37个欧洲国家中电力、天然气和其他燃料以及电话费用最低的国家。
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/1-LaborCn.png">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/2-LaborCn.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/1-ElectricityCn.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/2-ElectricityCn.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/1-OfficeSpaceCn.png">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/2-OfficeSpaceCn.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/1-TelecommunicationCn.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/2-TelecommunicationCn.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/1-TransportCn.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20CN/2-TransportCn.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+                KOJAMI是您获得所有这些好处的门票。 作为管理层的合作伙伴，我们为客户提供从战略制定到实际执行的建议。
+            </p>
+        </div>
+        <div class="flex flex-col hidden" id="costSavingsRu">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">экономия затрат </h1>
+            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+                По данным Евростата, Сербия имеет самые низкие среди 37 европейских государств цены на электричество, газ, другие виды топлива и стационарную телефонную связь.
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/1-LaborRu.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/2-LaborRu.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/1-ElectricityRu.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/2-ElectricityRu.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/1-OfficeSpaceRu.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/2-OfficeSpaceIrRu.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/1-TelecommunicationRu.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/2-TelecommunicationRu.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/1-TransportRu.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RU/2-TransportRu.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+                KOJAMI - это Ваш входной билет на все эти преимущества.
+                Как партнер по управлению, мы консультируем наших клиентов от разработки стратегии до ее прагматического внедрения.
+            </p>
+        </div>
+        <div class="flex flex-col hidden" id="costSavingsRs">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">уштеда трошкова</h1>
+            <p class="text-3xl lg:text-2xl mt-10 mx-6block">
+                Према подацима Еуростата, Србија има најниже цене међу
+                37 европских земаља за електричну енергију, гас, друга горива и телефонију.
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/1-LaborRs.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/2-LaborRs.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/1-ElectricityRs.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/2-ElectricityRs.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/1-OfficeSpaceRs.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/2-OfficeSpaceIrRs.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/1-TelecommunicationRs.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/2-TelecommunicationRs.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/1-TransportRs.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20RS/2-TransportRs.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 mx-6 block">
+                КОЈАМИ је ваша улазница за све ове погодности. Као менаџерски партнер, саветујемо наше клијенте од развоја стратегије до прагматичне примене.
+            </p>
+        </div>
+        <div class="flex flex-col hidden" id="costSavingsIr">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block text-right">صرفه جویی در هزینه ها</h1>
+            <p class="text-3xl lg:text-2xl mt-10 text-right mx-6 block">
+                براساس EUROSTAT ، صربستان در میان 37 منطقه ی اروپایی کمترین هزینه های برق ، گاز ، سوخت ، تلفن ثابت  و سایر
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/1-LaborIr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/2-LaborIr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/1-ElectricityIr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/2-ElectricityIr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/1-OfficeSpaceIr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/2-OfficeSpaceIr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/1-TelecommunicationIr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/2-TelecommunicationIr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/1-TransportIr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20IR/2-TransportIr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6 text-right">
+                موارد را داردKOJAMI بلیط ورود شما به کلیه این مزایا است. ما به عنوان یک شریک مدیریتی ، از توسعه استراتژی تا اجرای عملی به مشتریان خود مشاوره می دهیم.
+            </p>
+        </div>
+    </div>
+    <div class="filler bg-kojami-blue h-05 w-2/5 mx-auto my-16">
+
+    </div>
+    <div class="mx-10 lg:mx-0" id="offer">
+        <div class="flex flex-col">
+            <div class="block" id="arrowEn">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">Our offer</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">We check your cost saving potentials</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">Once you have decided to review your cost saving potentials, you first commission us
+                        to develop the cost analysis of your product or process for your specific case.
+                        Included in the analysis is the comparison to the costs which would arise in Serbia, of
+                        course with the same level of quality. This will provide you with a commercial basis
+                        for your decision to produce in/to Serbia.</p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        Phase 1: Cost analysis at the customer&#39;s site
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        Phase 2: Comparative presentation of costs in Serbia
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Implementation management</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        We will then provide you with intensive support in the implementation of your project.
+                        In close cooperation with you, we set the concrete goals and the exact framework of
+                        the implementation process.
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        Phase 3: Validation and implementation management
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        At this point, we either take over partial tasks for you or the entire implementation of
+                        the outsourcing project, from the search for a location, setting up production, to the
+                        recruitment of personnel and the necessary permits in Serbia.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Validation of the project objectives</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Qualitatively and
+                                    quantitatively in
+                                    the concept
+                                    phase with those
+                                    responsible
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Commitment to
+                                    the objectives
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Coordination of implementation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Definition of actions
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Timetable and
+                                    preconditions
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Qualitative,
+                                    quantitative
+                                    objectives,
+                                    responsibilities
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Commitment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6">Transfer of implementation objectives to <span class="text-font-kojami text-4xl">KOJAMI</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Measures and task packages
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Time required
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Quality targets
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Results
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Documentation of the
+                                    implementation progress by
+                                    KOJAMI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">real-time info to client</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Status
+                                    Implementation
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Project costs
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Operational control
+                                    in Jour-Fixes
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Validation of
+                                    financial target
+                                    achievement
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Process control</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Consistent
+                                    management of
+                                    implementation
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Documentation of
+                                    results
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" id="arrowDe">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">Unser Angebot</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Wir überprüfen Ihre Kostenersparnispotentiale</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">Nachdem Sie sich zu einer Überprüfung Ihrer Kostenersparnispotentiale entschieden haben, beauftragen Sie uns zunächst  für die Erarbeitung der Kostenanalyse Ihres Produktes oder Prozesses für Ihren spezifischen Fall.
+                        Inbegriffen in der Analyse ist der Vergleich zu den Kosten welche in Serbien entstehen würden, selbstverständlich bei gleichbleibendem Qualitätsniveau. So erhalten Sie eine kaufmännische Grundlage für Ihre Entscheidung in/nach Serbien zu produzieren/auszulagern.
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        Phase 1: Kostenanalyse beim Kunden vor Ort
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        Phase 2: Vergleichsdarstellung der Kosten in Serbien
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Umsetzungsmanagement</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        Wir unterstützen Sie daraufhin intensiv bei der Umsetzung Ihres Vorhabens. In enger Zusammenarbeit mit Ihnen, setzten wir die konkreten Ziele und den genauen Rahmen des Umsetzungsprozesses.
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        Phase 3: Validierungs- und Umsetzungsmanagement
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        Wir übernehmen an dieser Stelle entweder Teilaufgaben für Sie oder die gesamte Umsetzung des Outsourcings von der Standortsuche, Einrichtung der Produktion, bis hin zur Personalbeschaffung und den erforderlichen Genehmigungen in Serbien.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Validierung der Projektziele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Qualitativ und quantitativ in der Konzeptphase mit den Verantwortlichen
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Commitment zu den Zielen
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Abstimmung der Umsetzung</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Maßnahmendefinition
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Zeitplan und Voraussetzungen
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Qualitative, quantitative Ziele, Verantwortlichkeiten
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Commitment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6">Übertragung der Umsetzungsziele an <span class="text-font-kojami text-4xl">KOJAMI</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Maßnahmen und Aufgabenpakete
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Zeitbedarf
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Qualitätsziele
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Ergebnisse
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Dokumentation des Umsetzungsfortschritts durch KOJAMI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Real Time - Info an Auftraggeber</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Status Umsetzung
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Projektkosten
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Operative Steuerung in Jour-Fixes
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Validierung finanzieller Zielerreichung
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Steuerung</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Konsequente Steuerung der Umsetzung
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Ergebnisdokumentation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" id="arrowCn">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">我们的报价</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">我们检查您的成本节约潜力</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">一旦您决定审查您的成本节约潜力，您首先要委托我们针对您的具体情况对您的产品或工艺进行成本分析。
+                        分析中包括与在塞尔维亚发生的费用进行比较，当然是在相同质量水平下。这将为您决定在塞尔维亚生产/到塞尔维亚生产提供商业基础。</p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        第一阶段：在客户现场进行成本分析
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        第2阶段：塞尔维亚费用的比较列报方式
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">执行管理</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        然后，我们将在您的项目实施过程中为您提供深入的支持。在与您的密切合作下，我们制定了具体的目标和实施过程的确切框架。
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        第三阶段：验证和实施管理
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        在这一点上，我们可以为您承担部分任务，也可以为您实施整个外包，从寻找地点，建立生产，到招聘人员和在塞尔维亚获得必要的许可证。
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">项目目标的验证</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    在概念阶段与负责人员进行定性和定量分析
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    对目标的承诺
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">执行工作的协调</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    措施的定义
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    时间表和所需经费
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    定性、定量目标、责任
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    -承诺
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6">向<span class="text-font-kojami text-4xl">KOJAMI</span>移交执行目标</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    措施和任务包
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    所需时间
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    质量目标
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    结果
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    记录KOJAMI的执行进展情况
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">向客户提供实时信息</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    执行情况
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    项目费用
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    定期会议的业务管理
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    验证已实现的财务目标
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">项目控制</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    对执行情况的一致控制
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    成果文件
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden text-right" id="arrowIr">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">دامنه ما</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">ما پتانسیل شما را برای صرفه جویی در هزینه بررسی می کنیم</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">بعد از اینکه تصمیم گرفتید پتانسیل صرفه جویی در هزینه خود را بررسی کنید ، ابتدا می توانید ما را سفارش دهید تا تجزیه و تحلیل هزینه محصول یا فرآیند مربوط به مورد خاص خود را توسعه دهیم.
+                        مقایسه با هزینه هایی که در صربستان پیش می آید ، البته با همان سطح کیفیت ، در این تحلیل وجود دارد. این به شما یک مبنای تجاری برای تصمیم شما برای تولید / برون سپاری در / به صربستان می دهد.
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        مرحله 1: تجزیه و تحلیل هزینه در سایت مشتری
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        مرحله 2: مقایسه هزینه ها در صربستان
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">مدیریت پیاده سازی</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        سپس ما در اجرای پروژه شما پشتیبانی فشرده ای خواهیم داشت. در همکاری نزدیک با شما ، اهداف مشخص و چارچوب دقیق فرآیند اجرا را تعیین می کنیم.
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        مرحله 3: اعتبار سنجی و مدیریت پیاده سازی
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        در این مرحله ، ما یا کارهای جزئی را برای شما و یا کل اجرای برون سپاری را بر عهده می گیریم ، از یافتن مکان ، راه اندازی تولید ، تا استخدام و گرفتن مجوزهای لازم در صربستان.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    از نظر کیفی و کمی در مرحله مفهوم با مسئولین
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    تعهد به اهداف
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">            اعتبار سنجی اهداف پروژه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    تعریف اقدامات
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    برنامه و الزامات
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    اهداف ، مسئولیت های کیفی ، کمی
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    تعهد
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">            هماهنگی اجرا</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4 justify-end">
+                                <p class="text-3xl lg:text-2xl block">
+                                    اقدامات و بسته های کار
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex ml-4 justify-end">
+                                <p class="text-3xl lg:text-2xl block">
+                                    زمان مورد نیاز
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex ml-4 justify-end">
+                                <p class="text-3xl lg:text-2xl block">
+                                    اهداف کیفی
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex ml-4 justify-end">
+                                <p class="text-3xl lg:text-2xl block">
+                                    نتایج
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex ml-4 justify-end">
+                                <p class="text-3xl lg:text-2xl block">
+                                    KOJAMIمستندات پیشرفت اجرا توسط مشاوره
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6"><span class="text-font-kojami text-4xl">KOJAMI</span>انتقال اهداف اجرا به مشاوره</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    اجرای وضعیت
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    هزینه های پروژه
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    کنترل عملیاتی در جلسات منظم
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    اعتبار سنجی دستیابی به هدف مالی
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">            اطلاعات در زمان واقعی به مشتریان</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    کنترل مداوم اجرا
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                            <div class="flex justify-end ml-4">
+                                <p class="text-3xl lg:text-2xl block">
+                                    مستندات نتایج
+                                </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 ml-1" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">            مدیریت پروژه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" id="arrowRu">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">Наше предложение</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Мы проверим ваши потенциалы экономии</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">После того, как вы решили проанализировать свой потенциал экономии, вы сначала поручаете нам разработать анализ затрат на ваш продукт или процесс для вашего конкретного случая. В анализ включено сравнение с расходами, которые будут понесены в Сербии, разумеется, с тем же уровнем качества. Это обеспечит Вам коммерческую основу для принятия решения о производстве в/в Сербию.
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        Этап 1: Анализ затрат на объекте заказчика
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        Этап 2: Сравнительное представление расходов в Сербии
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Управление внедрением</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        Затем мы окажем вам интенсивную поддержку в реализации вашего проекта. В тесном сотрудничестве с Вами мы определили конкретные цели и точные рамки процесса реализации.
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        Фаза 3: Проверка и управление внедрением
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        На данном этапе мы берем на себя либо частичные задачи для Вас, либо всю реализацию аутсорсинга, начиная от поиска места, организации производства, заканчивая наймом персонала и получением необходимых разрешений в Сербии.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Проверка целей проекта</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Качественно и количественно на этапе разработки концепции с ответственными лицами
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    риверженность целям
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Координация осуществления</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Определение мер
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Расписание и требования
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Качественные, количественные цели, ответственность
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Обязательство
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6">Передача <span class="text-font-kojami text-4xl">KOJAMI</span> целей реализации</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Пакеты мер и задач
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Требуемое время
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Цели в области качества
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Результаты
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Документация о ходе осуществления КОJAMI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Информация для клиента в режиме реального времени</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Статус Выполнение
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Расходы по проектам
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Оперативное управление на регулярных совещаниях
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Проверка достижения финансовых целей
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Управление проектами</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Последовательный контроль за выполнением
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Документирование результатов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" id="arrowRs">
+                <div class="mb-16">
+                    <p class="text-5xl md-headLine text-center mb-6 text-font-business block md-headLine">Наша Понуда</p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Проверавамо ваш потенцијал уштеде трошкова</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">Након што одлучите да преиспитате свој потенцијал уштеде трошкова, прво нам можете поверити да развијемо анализу трошкова вашег производа или процеса за ваш конкретан случај. У анализу је укључено поређење са трошковима који би настали у Србији, наравно са истим нивоом квалитета. Ово вам даје комерцијалну основу за вашу одлуку да своју производњу селите у Србију.
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business font-bold block">
+                        Фаза 1: Анализа трошкова на локацији клијента
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-12 text-font-business font-bold block">
+                        Фаза 2: Поређење трошкова у Србији
+                    </p>
+                    <p class="text-4xl md-subHeadLine mb-6 text-font-business block">Управљање имплементацијом</p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business block">
+                        Тада ћемо вам пружити интензивну подршку и у спровођењу вашег пројекта. У блиској сарадњи са вама поставили смо специфичне циљеве и тачан оквир за процес примене.
+                    </p>
+                    <p class="text-3xl lg:text-2xl mb-6 text-font-business font-bold block">
+                        Фаза 3: Валидација и управљање реализацијом
+                    </p>
+                    <p class="text-3xl lg:text-2xl text-font-business block">
+                        У овом тренутку ми или преузимамо делимичне задатке за вас или целокупни пројекат извођења, од проналаска локације, постављања производње до регрутовања запослених и добијања потребних дозвола у Србији.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Валидација пројектних циљева</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    квалитативно и квантитативно у фази концепта са одговорнима
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Посвећеност циљевима
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Координација примене</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Дефиниција мера
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Временски распоред и  предуслови
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Квалитативни, квантитативни циљеви, одговорности
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Посвећеност
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-6">Пренос циљева примене на <span class="text-font-kojami text-4xl">KOJAMI</span> консалтинг</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Мере и пакети задатака
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Потребно време
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Циљеви квалитета
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Резултати
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Документација о напретку имплементације од стране КОЈАМИ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">real time информације клијентима</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Статус примене
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    трошкови пројекта
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Оперативна контрола на редовним састанцима
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Потврда постизања финансијских циљева
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex mt-2">
+                        <div class="flex flex-col w-2/5 block">
+                            <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
+                                <div class="flex flex-col bg-kojami-blue text-white">
+                                    <div class="flex flex-col">
+                                        <img src="img/svg/down-arrow-white.svg" class="" alt="arrow">
+                                        <div class="py-12">
+                                            <p class="text-center text-3xl lg:text-2xl mx-2">Пројектни менаџмент</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <img src="img/svg/down-arrow-blue.svg" class="" alt="arrow">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-3/5">
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Доследна контрола  имплементацијe
+                                </p>
+                            </div>
+                            <div class="flex ml-4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
+                                <p class="text-3xl lg:text-2xl block">
+                                    Документација резултата
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filler bg-kojami-blue h-05 w-2/5 mx-auto my-16">
+
+    </div>
+    <div id="contact">
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 block" id="contactEn">Contact</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 hidden" id="contactCn">联系我们</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 hidden" id="contactDe">Kontakt</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 hidden" id="contactIr">راه های تماس</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 hidden" id="contactRu">Контактная информация</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-6 hidden" id="contactRs">Контакт информације</h1>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx block" id="contact1En">
+            If we have sparked your interest please don’t hesitate to contact us for additional information about
+            KOJAMI’s scope of services.
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx block" id="contact2En">
+        We’ll gladly answer all of your questions and we are always available for a personal presentation about
+        the specific advantages of cooperating with our enterprise.
+        </p>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx hidden" id="contact1Cn">
+            如果您对我们的服务有兴趣，请随时联系我们，以了解更多关于KOJAMI的服务范围。
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx hidden" id="contact2Cn">
+            我们将很高兴回答您的所有问题，并随时为您介绍与我们公司合作的具体优势。
+        </p>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx hidden" id="contact1De">
+            Wenn wir Ihr Interesse geweckt haben, zögern Sie bitte nicht, uns für weitere Informationen über den
+            Leistungsumfang von KOJAMI zu kontaktieren.
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx hidden" id="contact2De">
+            Wir beantworten gerne alle Ihre Fragen und stehen Ihnen jederzeit für eine persönliche
+            Präsentation über die spezifischen Vorteile einer Zusammenarbeit mit unserem Unternehmen zur Verfügung.
+        </p>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx hidden" id="contact1Ir">
+            لطفا برای اطلاعات بیشتر در مورد دامنه خدمات KOJAMI با ما تماس بگیرید.
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx hidden" id="contact2Ir">
+            ما با کمال میل به تمام سوالات شما پاسخ خواهیم داد و همیشه برای ارائه مشاوره شخصی در مورد مزایای خاص همکاری با شرکت خود در دسترس هستیم.
+        </p>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx hidden" id="contact1Ru">
+            Если мы заинтересовали Вас, пожалуйста, свяжитесь с нами для получения дополнительной информации об услугах KOJAMI.
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx hidden" id="contact2Ru">
+            Мы с удовольствием ответим на все Ваши вопросы и всегда готовы лично рассказать о конкретных преимуществах сотрудничества с нашим предприятием.
+        </p>
+        <p class="text-3xl lg:text-2xl text-center text-font-business mb-4 mx-10 lg:mx-0 mid-size-mx hidden" id="contact1Rs">
+            Ако сте заинтересовани за наше услуге, контактирајте нас за више информација о услугама КОЈАМИ.
+        </p>
+        <p class="text-3xl lg:text-2xl text-font-business text-center text-font-business mb-16 mx-10 lg:mx-0 mid-size-mx hidden" id="contact2Rs">
+            Радо ћемо одговорити на сва ваша питања и увек смо спремни да вам лично презентујемо конкретне предности у сарадњи са нашом компанијом.
+        </p>
+        <div class="flex w-full justify-center text-font-business flex-col lg:flex-row" id="contactCards">
+            <div class="flex w-full lg:w-1/2 mb-12 lg:mb-0" id="contactCardRow1">
+                <div class="flex flex-col justify-center border-kojami-blue border-2 contactBox h-64 w-1/2 mx-6">
+                    <div class="text-center">
+                        <div class="mb-5 lg:mb-2">
+                            <img src="img/contact/micha.JPG" alt="person" class="w-1/2 mx-auto rounded-full">
+                        </div>
+                        <div class="mb-8 lg:mb-4">
+                            <p class="text-2xl lg:text-base block" id="contactCard1Line1En">
+                                Germany | Austria
+                            </p>
+                            <p class="text-2xl lg:text-base block" id="contactCard1Line2En">
+                                Switzerland
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line1Cn">
+                                德国 | 奥地利
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line2Cn">
+                                瑞士
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line1De">
+                                Deutschland | Österreich
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line2De">
+                                Schweiz
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line1Ir">
+                                آلمان | اتریش
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line2Ir">
+                                سنگاپور
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line1Ru">
+                                Германия | Австрия
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line2Ru">
+                                Швейцария
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line1Rs">
+                                Немачка | Аустрија
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard1Line2Rs">
+                                Швајцарска
+                            </p>
+                        </div>
+                        <div class="text-left ml-4 lg:ml-3">
+                            <p class="text-4xl lg:text-2xl font-bold">Mr. Michael Kost</p>
+                            <p class="text-3xl lg:text-xl">E-Mail: m.kost@kojami.eu</p>
+                            <p class="text-3xl lg:text-xl">Phone: +491755251174</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center border-kojami-blue border-2 contactBox h-64 w-1/2 mx-6">
+                    <div class="text-center">
+                        <div class="mb-5 lg:mb-2">
+                            <img src="img/contact/beni.jpg" alt="person" class="w-1/2 mx-auto rounded-full">
+                        </div>
+                        <div class="mb-8 lg:mb-4">
+                            <p class="text-2xl lg:text-base" id="contactCard2Line1En">
+                                China | Japan
+                            </p>
+                            <p class="text-2xl lg:text-base block" id="contactCard2Line2En">
+                                 Singapore
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line1Cn">
+                                中国 | 日本
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line2Cn">
+                                 新加坡
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line1De">
+                                China | Japan
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line2De">
+                                Singapur
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line1Ir">
+                                چین | ژاپن
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line2Ir">
+                                سوئیس
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line1Ru">
+                                Китай | Япония
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line2Ru">
+                                Сингапур
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line1Rs">
+                                Кина | Јапан
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard2Line2Rs">
+                                Сингапур
+                            </p>
+                        </div>
+                        <div class="text-left ml-4 lg:ml-3">
+                            <p class="text-4xl lg:text-2xl font-bold">Mr. Benjamin Kost</p>
+                            <p class="text-3xl lg:text-xl">E-Mail: b.kost@kojami.eu</p>
+                            <p class="text-3xl lg:text-xl">Phone: +491746475109</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex w-full lg:w-1/2" id="contactCardRow2">
+                <div class="flex flex-col justify-center border-kojami-blue border-2 contactBox h-64 w-1/2 mx-6">
+                    <div class="text-center">
+                        <div class="mb-5 lg:mb-2">
+                            <img src="img/contact/alex.JPG" alt="person" class="w-1/2 mx-auto  rounded-full">
+                        </div>
+                        <div class="mb-16 lg:mb-4">
+                            <p class="text-2xl lg:text-base block" id="contactCard3En">
+                                Marketing
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard3Cn">
+                                市场营销
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard3De">
+                                Marketing
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard3Ir">
+                                مارکتینگ
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard3Ru">
+                                Маркетинг
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard3Rs">
+                                Маркетинг
+                            </p>
+                        </div>
+                        <div class="text-left lg:mt-10 ml-4 mb-8 lg:ml-3">
+                            <p class="text-4xl lg:text-2xl font-bold">Mr. Alexandar Kling</p>
+                            <p class="text-3xl lg:text-xl">E-Mail: a.kling@kojami.eu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center border-kojami-blue border-2 contactBox h-64 w-1/2 mx-6">
+                    <div class="text-center">
+                        <div class="mb-5 lg:mb-2">
+                            <img src="img/svg/vektor-logo.svg" alt="person" class="w-1/2 mx-auto">
+                        </div>
+                        <div class="mb-16 lg:mb-4">
+                            <p class="text-2xl lg:text-base block" id="contactCard4En">
+                                Office
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard4Cn">
+                                办公室
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard4De">
+                                Office
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard4Ir">
+                                دفترمرکزی
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard4Ru">
+                                Офис
+                            </p>
+                            <p class="text-2xl lg:text-base hidden" id="contactCard4Rs">
+                                канцеларија
+                            </p>
+                        </div>
+                        <div class="text-left lg:mt-10 ml-4 mb-8 lg:ml-3">
+                            <p class="text-4xl lg:text-2xl font-bold">Serbia Belgrade</p>
+                            <p class="text-3xl lg:text-xl">E-Mail: info@kojami.eu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filler bg-kojami-blue h-05 w-2/5 mx-auto my-16">
+
+    </div>
+    <div class="mb-32" id="partner">
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 block" id="partnerEn">Partners</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 hidden" id="partnerDe">Partner</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 hidden" id="partnerCn">伙伴</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 hidden" id="partnerIr">شرکا</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 hidden" id="partnerRu">Партнеры</h1>
+        <h1 class="text-5xl md-headLine text-font-business text-center text-font-business mb-16 hidden" id="partnerRs">Партнери</h1>
+        <div class="flex">
+            <div class="w-1/2 ml-6">
+                <img src="img/partners/partners-men.jpg">
+            </div>
+            <div class="flex justify-center w-1/2">
+                <div class="w-1/2">
+                    <img src="img/partners/partnerLogo.png" onclick="window.location.href = 'http://ndaconsulting.net/';" class="offerBox cursor-pointer mt-16 w-full">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-kojami-blue" id="footer">
+    <div class="max-w mx-auto text-kojami-blue text-font-business select-none tracking-tighter">
+        <div class="flex flex-col bg-kojami-blue text-font-business text-white cursor-default" >
+            <div class="flex justify-between mt-12">
+                <div class="ml-6">
+                    <p class="">
+                        Phone: +491755251174<br>
+                        E-Mail: info@kojami.eu<br>
+                    </p>
+                    <p class="mt-2">
+                        KOJAMI International Consulting d.o.o. (i.G)<br>
+                        Džordža Vašingtona 48<br>
+                        11000 Belgrade<br>
+                        Serbia
+                    </p>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base block" id="footerEn">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">Imprint</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base hidden" id="footerDe">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">Impressum</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">Datenschutzerklärung</a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base hidden" id="footerCn">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">版本说明</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">私隐政策</a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base hidden" id="footerRu">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">Вывод</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">Политика конфиденциальности</a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base hidden" id="footerRs">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">Отисак</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">Правила о приватности</a>
+                    </div>
+                </div>
+                <div class="flex flex-col text-4xl lg:text-base hidden" id="footerIr">
+                    <div class="text-center offerBox">
+                        <a href="#" class="">چاپ</a>
+                    </div>
+                    <div class="text-center mt-2 offerBox">
+                        <a href="#" class="">سیاست حفظ حریم خصوصی</a>
+                    </div>
+                </div>
+                <div class="flex  flex-col">
+                    <p class="mx-auto text-2xl lg:text-base text-center">made by</p>
+                    <div class="mx-auto w-1/3">
+                        <img src="img/svg/XXX.svg" class="cursor-pointer offerBox mx-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 mb-4">
+                <p class="text-2xl lg:text-xs text-white text-center">© 2020 Kojami, all rights reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

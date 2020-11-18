@@ -1,0 +1,184 @@
+.text-kojami-blue {
+    color: #01004A;
+}
+.bg-kojami-blue{
+    background-color: #01004A;
+}
+.border-kojami-blue{
+    border-color: #01004A;
+}
+.text-font-business{
+    font-family: 'Trueno', sans-serif;
+}
+.text-font-kojami{
+    font-family: 'Bass', sans-serif;
+}
+.text-serif{
+    font-family: Constantia, serif;
+}
+@font-face {
+    font-family: 'Trueno';
+    src: url('../fonts/TruenoLt.woff2') format('woff2'),
+    url('../fonts/TruenoLt.woff') format('woff');
+}
+@font-face {
+    font-family: 'Bass';
+    src: url('../fonts/Stop.woff2') format('woff2'),
+    url('../fonts/Stop.woff') format('woff'),
+    url('../fonts/Stop.svg#Stop') format('svg');
+}
+.max-w{
+    max-width: 1280px;
+}.px-9{
+     padding: 2.25rem;
+ }
+ #navbar{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 50;
+ }
+ .lg-max-h{
+     height: 93.5vh;
+ }
+ .imageTextSkyline{
+     margin-top: -80vh;
+ }
+#kojamiSkyline{
+    font-size: 10vw;
+}
+#textSkyline{
+    font-size: 8vw;
+}
+#subTextSkyline{
+    font-size: 6vw;
+}
+.whiteNavbarLinks{
+    color: white;
+}
+.offerBox{
+    transition: 0.3s ease;
+}
+.offerBox:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.h-05{
+    height: 0.125rem;
+}
+.contactBox{
+    transition: 0.3s ease;
+    height: 22rem;
+}
+.contactBox:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.navBarElement{
+    transition: 0.6s;
+}
+.navBarElement:hover{
+    background-color: #01004A;
+    color: white;
+}
+.daze{
+    width: 1000%
+}
+@media (max-width: 1028px) {
+    .md-navHeight{
+        height: 8rem;
+    }
+    .md-navmt{
+        margin-top: 8rem;
+    }
+    .md-max-h{
+        height: 94vh;
+    }
+    #textSkyline{
+        font-size: 9vw;
+    }
+    #subTextSkyline{
+        font-size: 8vw;
+    }
+    #kojamiSkyline{
+        font-size: 20vw;
+    }
+    .md-arrow-mt{
+        margin-top: 35vh;
+    }
+    .md-text-5-5xl{
+        font-size: 3.5rem;
+    }
+    .offerTileHeight{
+        height: 110%;
+        min-height: 100%;
+    }
+    .offerTileWidth{
+        width: 60%;
+    }
+    .md-headLine{
+        font-size: 500%;
+    }
+    .md-subHeadLine{
+        font-size: 300%;
+    }
+    .md-line{
+        font-size: 200%;
+    }
+    .md-subLine{
+        font-size: 150%;
+    }
+    .md-mb-55{
+        margin-bottom: 5.8rem;
+    }
+    .contactBox{
+        transition: 0.3s ease;
+        height: 40rem;
+    }
+}
+@media (min-width: 1027px) and (max-width: 1400px) {
+    .kojami-skyline-mb{
+        margin-bottom: -3rem;
+    }
+}
+@media (min-width: 1027px) and (max-width: 1300px) {
+    .mid-size-mx{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+@media (min-width: 1027px) {
+    .arrowBoxHover{
+        transition: 0.3s ease;
+    }
+    .arrowBoxHover:hover{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+    }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 52;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.6s;
+}
+.sidenav a {
+    text-decoration: none;
+    display: block;
+    transition: 0.6s;
+}
+.hyphen{
+    text-justify: inter-word;
+}
+.h-arrow{
+    height: 20%;
+}
