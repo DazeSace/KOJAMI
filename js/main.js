@@ -1,4 +1,7 @@
 //smooth scroll function
+$(function(){
+    trans("en")
+});
 $(function () {
     $('a[href*=\\#]:not([href=\\#])').on('click', function () {
         var slide
@@ -99,11 +102,11 @@ $(window).on('resize scroll', function () {
 //expand languageBox
 function expandLangs(){
     $('#langBox').addClass("flex").removeClass("hidden")
-};
+}
 //pack up languageBox
 function packupLangs(){
     $('#langBox').addClass("hidden").removeClass("flex")
-};
+}
 //toggle languageBox
 var expand = false
 function toggleLangs(){
@@ -116,88 +119,7 @@ function toggleLangs(){
         expand = false
     }
 }
-//set Language
-const langIds = [
-    "navHomeText", "navAboutUsText", "navPossibilitiesText", "navWhySerbiaText", "navOfferText", "navContactText", "navPartnersText",
-    "navSlideHomeText", "navSlideAboutUsText", "navSlidePossibilitiesText", "navSlideWhySerbiaText", "navSlideOfferText", "navSlideContactText", "navSlidePartnersText",
-    "aboutUs","aboutUs",
-    "possibilitiesHead", "possibilitiesSub",
-    "mobileTile1", "mobileTile2", "mobileTile3", "mobileTile4", "mobileTile5", "mobileTile6",
-    "desktopTile1", "desktopTile2", "desktopTile3", "desktopTile4", "desktopTile5", "desktopTile6",
-    "whySerb",
-    "location", "location1", "location2",
-    "freeTrade", "freeTrade1", "freeTrade2",
-    "costSavings",
-    "arrow",
-    "contact", "contact1", "contact2",
-    "contactCard1Line1", "contactCard1Line2", "contactCard2Line1", "contactCard2Line2", "contactCard3", "contactCard4",
-    "partner",
-    "footer"
-]
-function setLanguage(lang){
-    packupLangs()
-    if(lang === "cn"){
-        for (i = 0; i <= langIds.length; i++){
-            $("#"+langIds[i]+"De").addClass("hidden").removeClass("block")
-            $("#"+langIds[i]+"Ru").addClass("hidden").removeClass("block")
-            $("#"+langIds[i]+"En").addClass("hidden").removeClass("block")
-            $("#"+langIds[i]+"Ir").addClass("hidden").removeClass("block")
-            $("#"+langIds[i]+"Rs").addClass("hidden").removeClass("block")
-            $("#"+langIds[i]+"Cn").addClass("block").removeClass("hidden")
-        }
-    }
-    if(lang === "de"){
-        for (id = 0; id <= langIds.length; id++){
-            $("#"+langIds[id]+"Cn").addClass("hidden").removeClass("block")
-            $("#"+langIds[id]+"Ru").addClass("hidden").removeClass("block")
-            $("#"+langIds[id]+"En").addClass("hidden").removeClass("block")
-            $("#"+langIds[id]+"Ir").addClass("hidden").removeClass("block")
-            $("#"+langIds[id]+"Rs").addClass("hidden").removeClass("block")
-            $("#"+langIds[id]+"De").addClass("block").removeClass("hidden")
-        }
-    }
-    if(lang === "en"){
-        for (ic = 0; ic <= langIds.length; ic++){
-            $("#"+langIds[ic]+"Cn").addClass("hidden").removeClass("block")
-            $("#"+langIds[ic]+"De").addClass("hidden").removeClass("block")
-            $("#"+langIds[ic]+"Ru").addClass("hidden").removeClass("block")
-            $("#"+langIds[ic]+"Ir").addClass("hidden").removeClass("block")
-            $("#"+langIds[ic]+"Rs").addClass("hidden").removeClass("block")
-            $("#"+langIds[ic]+"En").addClass("block").removeClass("hidden")
-        }
-    }
-    if(lang === "rs"){
-        for (is = 0; is <= langIds.length; is++){
-            $("#"+langIds[is]+"Cn").addClass("hidden").removeClass("block")
-            $("#"+langIds[is]+"De").addClass("hidden").removeClass("block")
-            $("#"+langIds[is]+"En").addClass("hidden").removeClass("block")
-            $("#"+langIds[is]+"Ir").addClass("hidden").removeClass("block")
-            $("#"+langIds[is]+"Ru").addClass("hidden").removeClass("block")
-            $("#"+langIds[is]+"Rs").addClass("block").removeClass("hidden")
-        }
-    }
-    if(lang === "ru"){
-        for (ir = 0; ir <= langIds.length; ir++){
-            $("#"+langIds[ir]+"Cn").addClass("hidden").removeClass("block")
-            $("#"+langIds[ir]+"De").addClass("hidden").removeClass("block")
-            $("#"+langIds[ir]+"En").addClass("hidden").removeClass("block")
-            $("#"+langIds[ir]+"Ir").addClass("hidden").removeClass("block")
-            $("#"+langIds[ir]+"Rs").addClass("hidden").removeClass("block")
-            $("#"+langIds[ir]+"Ru").addClass("block").removeClass("hidden")
-        }
-    }
-    if(lang === "ir"){
-        for (ii = 0; ii <= langIds.length; ii++){
-            $("#"+langIds[ii]+"Cn").addClass("hidden").removeClass("block")
-            $("#"+langIds[ii]+"De").addClass("hidden").removeClass("block")
-            $("#"+langIds[ii]+"En").addClass("hidden").removeClass("block")
-            $("#"+langIds[ii]+"Ru").addClass("hidden").removeClass("block")
-            $("#"+langIds[ii]+"Rs").addClass("hidden").removeClass("block")
-            $("#"+langIds[ii]+"Ir").addClass("block").removeClass("hidden")
-        }
-    }
-}
-//navSlide open and close functions
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
 }
