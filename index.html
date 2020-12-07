@@ -150,41 +150,53 @@
         </div>
         <div class="flex w-1/4 lg:w-1/12 cursor-pointer mr-10">
             <div class="hidden flex-col justify-center text-center text-3xl lg:text-lg font-semibold w-full pb-2 text-font-business bg-white shadow-lg" onmouseenter="toggleLangs()" onmouseleave="toggleLangs()" id="langBox">
-                <div class="flex navBarElement justify-evenly" onclick="trans('en')">
-                    <div class="w-1/5 -mr-4">
-                        <img src="img/flags/united-states-of-america.svg">
+                <div class="flex navBarElement justify-between" onclick="trans('en')">
+                    <div class="w-1/5 ml-8 ">
+                        <img src="img/flags/united-states.svg">
                     </div>
-                    <p class="text-center -ml-4">US</p>
+                    <p class="text-center mr-8">ENG</p>
                 </div>
-                <div class="flex navBarElement justify-evenly" onclick="trans('de')">
-                    <div class="w-1/5 -mr-4">
-                        <img src="img/flags/germany(1).svg">
+                <div class="flex navBarElement justify-between" onclick="trans('de')">
+                    <div class="w-1/5 ml-8 ">
+                        <img src="img/flags/germany.svg">
                     </div>
-                    <p class="text-center -ml-4">DE</p>
+                    <p class="text-center mr-8">GER</p>
                 </div>
-                <div class="flex navBarElement justify-evenly" onclick="trans('cn')">
-                    <div class="w-1/5 -mr-4">
+                <div class="flex navBarElement justify-between" onclick="trans('cn')">
+                    <div class="w-1/5 ml-8 ">
                         <img src="img/flags/china.svg">
                     </div>
-                    <p class="text-center -ml-4">CN</p>
+                    <p class="text-center mr-8">CHN</p>
                 </div>
-                <div class="flex navBarElement justify-evenly" onclick="trans('rs')">
-                    <div class="w-1/5 -mr-4">
+                <div class="flex navBarElement justify-between" onclick="trans('rs')">
+                    <div class="w-1/5 ml-8 ">
                         <img src="img/flags/serbia.svg">
                     </div>
-                    <p class="text-center -ml-4">RS</p>
+                    <p class="text-center mr-8">SRB</p>
                 </div>
-                <div class="flex navBarElement justify-evenly" onclick="trans('ru')">
-                    <div class="w-1/5 ml-1 -mr-4">
+                <div class="flex navBarElement justify-between" onclick="trans('ru')">
+                    <div class="w-1/5 ml-8 ">
                         <img src="img/flags/russia.svg">
                     </div>
-                    <p class="text-center -ml-4">RU</p>
+                    <p class="text-center mr-8">RUS</p>
                 </div>
-                <div class="flex navBarElement justify-evenly" onclick="trans('ir')">
-                    <div class="w-1/5 -mr-4">
+                <div class="flex navBarElement justify-between" onclick="trans('ir')">
+                    <div class="w-1/5 ml-8 ">
                         <img src="img/flags/iran.svg">
                     </div>
-                    <p class="text-center -ml-4">IR</p>
+                    <p class="text-center mr-8">IRN</p>
+                </div>
+                <div class="flex navBarElement justify-between" onclick="trans('tr')">
+                    <div class="w-1/5 ml-8 ">
+                        <img src="img/flags/turkey.svg">
+                    </div>
+                    <p class="text-center mr-8">TUR</p>
+                </div>
+                <div class="flex navBarElement justify-between" onclick="trans('ar')">
+                    <div class="w-1/5 ml-8">
+                        <img src="img/flags/arabia.svg">
+                    </div>
+                    <p class="text-center mr-8">ARA</p>
                 </div>
             </div>
         </div>
@@ -235,41 +247,69 @@
             </a>
         </div>
         <div class="flex justify-center flex-wrap px-4 text-2xl mt-16">
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('en')">
-                <div class="w-1/5 -mr-4">
-                    <img src="img/flags/united-states-of-america.svg">
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('en')">
+                <div class="w-1/3 ">
+                    <img src="img/flags/united-states.svg">
                 </div>
-                <p class="text-center -ml-4">US</p>
-            </div>
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('de')">
-                <div class="w-1/5 -mr-4">
-                    <img src="img/flags/germany(1).svg">
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">ENG</p>
                 </div>
-                <p class="text-center -ml-4">DE</p>
             </div>
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('cn')">
-                <div class="w-1/5 -mr-4">
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('de')">
+                <div class="w-1/3 ">
+                    <img src="img/flags/germany.svg">
+                </div>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">GER</p>
+                </div>
+            </div>
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('cn')">
+                <div class="w-1/3 ">
                     <img src="img/flags/china.svg">
                 </div>
-                <p class="text-center -ml-4">CN</p>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">CHN</p>
+                </div>
             </div>
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('rs')">
-                <div class="w-1/5 -mr-4">
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('rs')">
+                <div class="w-1/3 ">
                     <img src="img/flags/serbia.svg">
                 </div>
-                <p class="text-center -ml-4">RS</p>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">SRB</p>
+                </div>
             </div>
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('ru')">
-                <div class="w-1/5 -mr-4">
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('ru')">
+                <div class="w-1/3 ">
                     <img src="img/flags/russia.svg">
                 </div>
-                <p class="text-center -ml-4">RU</p>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">RUS</p>
+                </div>
             </div>
-            <div class="flex navBarElement justify-evenly w-2/5" onclick="trans('ir')">
-                <div class="w-1/5 -mr-4">
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('ir')">
+                <div class="w-1/3 ">
                     <img src="img/flags/iran.svg">
                 </div>
-                <p class="text-center -ml-4">IR</p>
+                <div class="">
+                    <p class="text-center text-4xl mt-2 mr-8">IRN</p>
+                </div>
+            </div>
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('tr')">
+                <div class="w-1/3 ">
+                    <img src="img/flags/turkey.svg">
+                </div>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">TUR</p>
+                </div>
+            </div>
+            <div class="flex navBarElement justify-between w-1/2" onclick="trans('ar')">
+                <div class="w-1/3 ">
+                    <img src="img/flags/arabia.svg">
+                </div>
+                <div class="px-1">
+                    <p class="text-center text-4xl mt-2 mr-8">ARA</p>
+                </div>
             </div>
         </div>
     </div>
@@ -458,7 +498,7 @@
         <h1 class="text-4xl text-font-business mb-10 mid-size-mx ml-10 lg:ml-0 block" id="freeTrade"></h1>
         <div class="mb-16 flex flex-col lg:flex-row mx-10 mid-size-mx lg:mx-0">
             <div class="lg:w-2/3 lg:mt-16">
-                <img src="img/whySerbia/free-trade-karte.jpg" alt="location" class="object-contain">
+                <img src="img/whySerbia/free-trade-karte.png" alt="location" class="object-contain">
             </div>
             <div class="flex flex-col lg:w-1/3">
                 <p class="text-justify text-3xl lg:text-2xl lg:ml-4 lg:mt-10 block" id="freeTrade1">
@@ -469,9 +509,10 @@
                 </p>
             </div>
         </div>
+
         <div class="flex flex-col" id="costSavingsEn">
             <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Cost Savings</h1>
-            <p class="text-3xl lg:text-2xl mt-10 block">
+            <p class="text-3xl lg:text-2xl mt-10 mx-10 block">
                 According to EUROSTAT, Serbia has the lowest costs of electricity, gas, other
                 fuels and landline telephony among 37 European states.
             </p>
@@ -537,7 +578,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl lg:text-2xl mt-10 block" id="costSave2En">
+            <p class="text-3xl lg:text-2xl mt-10 mx-10 block" id="costSave2En">
                 KOJAMI is your entry-ticket to all these benefits.
                 As a partner of management, we advise our customers from strategy development to pragmatic
                 implementation.
@@ -545,7 +586,7 @@
         </div>
         <div class="flex flex-col hidden" id="costSavingsDe">
             <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Kostensenkung</h1>
-            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+            <p class="text-3xl lg:text-2xl mt-10 block mx-10">
                 Laut EUROSTAT hat Serbien unter 37 europäischen Staaten die niedrigsten Kosten für
                 Strom, Gas und andere Brennstoffe, sowie Telefonie.
             </p>
@@ -611,21 +652,21 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-10">
                 KOJAMI ist Ihr Eintrittsticket zu all diesen Vorteilen.
                 Als Partner des Managements beraten wir unsere Kunden von der Strategieentwicklung bis zur pragmatischen Umsetzung.
             </p>
         </div>
         <div class="flex flex-col hidden" id="costSavingsCn">
             <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">降低成本</h1>
-            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+            <p class="text-3xl lg:text-2xl mt-10 block mx-10">
                 根据欧统局的数据，塞尔维亚是37个欧洲国家中电力、天然气和其他燃料以及电话费用最低的国家。
             </p>
             <div class="flex flex-col mt-10 mr-10">
                 <div class="flex">
                     <div class="flex w-2/3">
                         <div class="">
-                            <img src="img/savings/SET%20CN/1-LaborCn.png">
+                            <img src="img/savings/SET%20CN/1-LaborCn.JPG">
                         </div>
                     </div>
                     <div class="flex w-1/3">
@@ -649,7 +690,7 @@
                 <div class="flex">
                     <div class="flex w-2/3">
                         <div class="">
-                            <img src="img/savings/SET%20CN/1-OfficeSpaceCn.png">
+                            <img src="img/savings/SET%20CN/1-OfficeSpaceCn.JPG">
                         </div>
                     </div>
                     <div class="flex w-1/3">
@@ -683,13 +724,13 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-10">
                 KOJAMI是您获得所有这些好处的门票。 作为管理层的合作伙伴，我们为客户提供从战略制定到实际执行的建议。
             </p>
         </div>
         <div class="flex flex-col hidden" id="costSavingsRu">
-            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">экономия затрат </h1>
-            <p class="text-3xl lg:text-2xl mt-10 block mx-6">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Экономия затрат </h1>
+            <p class="text-3xl lg:text-2xl mt-10 block mx-10">
                 По данным Евростата, Сербия имеет самые низкие среди 37 европейских государств цены на электричество, газ, другие виды топлива и стационарную телефонную связь.
             </p>
             <div class="flex flex-col mt-10 mr-10">
@@ -754,14 +795,14 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6">
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-10">
                 KOJAMI - это Ваш входной билет на все эти преимущества.
                 Как партнер по управлению, мы консультируем наших клиентов от разработки стратегии до ее прагматического внедрения.
             </p>
         </div>
         <div class="flex flex-col hidden" id="costSavingsRs">
-            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">уштеда трошкова</h1>
-            <p class="text-3xl lg:text-2xl mt-10 mx-6block">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Уштеда трошкова</h1>
+            <p class="text-3xl lg:text-2xl mt-10 mx-10 block">
                 Према подацима Еуростата, Србија има најниже цене међу
                 37 европских земаља за електричну енергију, гас, друга горива и телефонију.
             </p>
@@ -827,13 +868,13 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl mt-10 lg:text-2xl mt-6 mx-6 block">
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 mx-10 block">
                 КОЈАМИ је ваша улазница за све ове погодности. Као менаџерски партнер, саветујемо наше клијенте од развоја стратегије до прагматичне примене.
             </p>
         </div>
         <div class="flex flex-col hidden" id="costSavingsIr">
             <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block text-right">صرفه جویی در هزینه ها</h1>
-            <p class="text-3xl lg:text-2xl mt-10 text-right mx-6 block">
+            <p class="text-3xl lg:text-2xl mt-10 text-right mx-10 block">
                 براساس EUROSTAT ، صربستان در میان 37 منطقه ی اروپایی کمترین هزینه های برق ، گاز ، سوخت ، تلفن ثابت  و سایر
             </p>
             <div class="flex flex-col mt-10 mr-10">
@@ -898,10 +939,157 @@
                     </div>
                 </div>
             </div>
-            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-6 text-right">
+            <p class="text-3xl mt-10 lg:text-2xl mt-6 block mx-10 text-right">
                 موارد را داردKOJAMI بلیط ورود شما به کلیه این مزایا است. ما به عنوان یک شریک مدیریتی ، از توسعه استراتژی تا اجرای عملی به مشتریان خود مشاوره می دهیم.
             </p>
         </div>
+        <div class="flex flex-col hidden" id="costSavingsTr">
+            <h1 class="text-4xl text-font-business ml-10 mid-size-mx lg:ml-0 block">Cost Savings</h1>
+            <p class="text-3xl lg:text-2xl mt-10 mx-10 block">
+                EUROSTAT'a göre Sırbistan, 37 Avrupa ülkesi arasında ücret, elektrik, gaz ve diğer yakıtların yanı sıra telefon için en düşük maliyete sahip ülke.
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/1-LaborTr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/2-LaborTr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/1-ElectricityTr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/2-ElectricityTr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/1-OfficeSpaceTr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/2-OfficeSpaceIrTr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/1-TelecommunicationTr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/2-TelecommunicationTr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/1-TransportTr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20TR/2-TransportTr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl lg:text-2xl mt-10 mx-10 block">
+                KOJAMI, tüm bu avantajlara giriş biletinizdir. Bir yönetim ortağı olarak müşterilerimize strateji geliştirmeden pragmatik uygulamaya kadar her konuda tavsiyelerde bulunuyoruz.
+            </p>
+        </div>
+        <div class="flex flex-col hidden" id="costSavingsAr">
+            <h1 class="text-4xl text-right text-font-business ml-10 mid-size-mx lg:ml-0 block">خفض التكاليف</h1>
+            <p class="text-3xl text-right lg:text-2xl mt-10 mx-10 block">
+                وفقًا لـ
+                EUROSTAT
+                تمتلك صربيا أقل تكلفة للعمالة والكهرباء والغاز وأنواع الوقود الأخرى بالإضافة إلى الاتصالات الهاتفية بين 37 دولة أوروبية.
+            </p>
+            <div class="flex flex-col mt-10 mr-10">
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/1-LaborAr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/2-LaborAr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/1-ElectricityAr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/2-ElectricityAr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/1-OfficeSpaceAr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/2-OfficeSpaceAr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/1-TelecommunicationAr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/2-TelecommunicationAr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex w-2/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/1-TransportAr.JPG">
+                        </div>
+                    </div>
+                    <div class="flex w-1/3">
+                        <div class="">
+                            <img src="img/savings/SET%20AR/2-TransportAr.JPG" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-3xl text-right lg:text-2xl mt-10 mx-10 block">
+                KOJAMI
+                . هي تذكرة دخولك إلى كل هذه المزايا
+                بصفتنا شريكًا إداريًا ، فإننا ننصح عملائنا في كل شيء بدءًا من تطوير الإستراتيجية إلى التنفيذ العملي.
+            </p>
+        </div>
+
     </div>
     <div class="filler bg-kojami-blue h-05 w-2/5 mx-auto my-16">
 
@@ -1243,7 +1431,7 @@
     <div class="max-w mx-auto text-kojami-blue text-font-business select-none tracking-tighter">
         <div class="flex flex-col bg-kojami-blue text-font-business text-white cursor-default" >
             <div class="flex justify-between mt-12">
-                <div class="ml-6">
+                <div class="ml-6 w-1/3">
                     <p class="">
                         Phone: +491755251174<br>
                         E-Mail: info@kojami.eu<br>
@@ -1255,22 +1443,25 @@
                         Serbia
                     </p>
                 </div>
-                <div class="flex flex-col text-4xl lg:text-base block" id="footerEn">
+                <div class="flex flex-col w-1/3 text-2xl lg:text-base block" id="footerEn">
                     <div class="text-center offerBox">
                         <a href="#" class="" id="imprint1"></a>
                     </div>
                     <div class="text-center mt-2 offerBox">
                         <a href="#" class="" id="imprint2"></a>
                     </div>
+                    <div class="mt-12 offerBox cursor-pointer">
+                        <img class="w-1/4 mx-auto" src="img/svg/vektor-logo-white.svg">
+                    </div>
                 </div>
-                <div class="flex  flex-col">
+                <div class="flex w-1/3 flex-col">
                     <p class="mx-auto text-2xl lg:text-base text-center">made by</p>
                     <div class="mx-auto w-1/3">
                         <img src="img/svg/XXX.svg" class="cursor-pointer offerBox mx-auto">
                     </div>
                 </div>
             </div>
-            <div class="mt-8 mb-4">
+            <div class="mt-4 mb-4">
                 <p class="text-2xl lg:text-xs text-white text-center">© 2020 Kojami, all rights reserved</p>
             </div>
         </div>

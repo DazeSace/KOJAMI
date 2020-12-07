@@ -355,13 +355,13 @@ const dictionary = {
         "possibilitiesHead": "Возможности",
         "possibilitiesSub": "Аутсорсинг бизнес-процессов в Сербии, например:",
         "mobileTile1": "Производственное партнерство для малого и среднего бизнеса с <span class=\"text-font-kojami text-xl\">KOJAMI</span>",
-        "mobileTile2": "",
+        "mobileTile2": "Производство комплектующих для малых и средних предприятий",
         "mobileTile3": "Полное изготовление узлов для малых и средних предприятий",
         "mobileTile4": "Учреждение дочерних предприятий",
         "mobileTile5": "Совместное предприятие с местными компаниями",
         "mobileTile6": "Бухгалтерский учет по европейскому и американскому стандартам",
         "desktopTile1": "Производственное партнерство для малого и среднего бизнеса с <span class=\"text-font-kojami text-xl\">KOJAMI</span>",
-        "desktopTile2": "",
+        "desktopTile2": "Производство комплектующих для малых и средних предприятий",
         "desktopTile3": "Полное изготовление узлов для малых и средних предприятий",
         "desktopTile4": "Учреждение дочерних предприятий",
         "desktopTile5": "Совместное предприятие с местными компаниями",
@@ -628,6 +628,204 @@ const dictionary = {
         "imprint1": "چاپ",
         "imprint2": "سیاست حفظ حریم خصوصی",
     },
+    "tr":{
+        "navHomeText": "Ana Sayfa",
+        "navAboutUsText": "Hakkımızda",
+        "navPossibilitiesText": "Olasılıklar",
+        "navWhySerbiaText": "Neden SIRBISTAN?",
+        "navOfferText": "Teklifimiz",
+        "navContactText": "İletişim",
+        "navPartnersText": "Ortaklar",
+        "navSlideHomeText": "Ana Sayfa",
+        "navSlideAboutUsText": "Hakkımızda",
+        "navSlidePossibilitiesText": "Olasılıklar",
+        "navSlideWhySerbiaText": "Neden SIRBISTAN?",
+        "navSlideOfferText": "Teklifimiz",
+        "navSlideContactText": "İletişim",
+        "navSlidePartnersText": "Ortaklar",
+
+        "aboutUs1": "Merkezi Belgrad / Sırbistan'da bulunan ",
+        "aboutUs15": "<span class=\"text-font-kojami\">KOJAMI</span> International Consulting",
+        "aboutUs2":
+            "maliyetli iş süreçleri için karlı çözümler bulma ve onları daha verimli ve başarılı kılma konusunda dünyanın her yerinden müşterileri destekleme hedefini belirlemiştir.",
+
+        "possibilitiesHead": "Seçenekleriniz",
+        "possibilitiesSub": "İş süreçlerinin Sırbistan'a dış kaynak kullanımı, örneğin:",
+        "mobileTile1": "<span class=\"text-font-kojami\">KOJAMI</span> ile KOBİ'ler (küçük ve orta Ölçekli işletmeler) için üretim ortaklığı",
+        "mobileTile2": "KOBİ'ler için parça üretimi",
+        "mobileTile3": "KOBİ'ler için komple montaj üretimi",
+        "mobileTile4": "İştiraklerin ipucu",
+        "mobileTile5": "Yerel şirketlerle ortak girişim",
+        "mobileTile6": "AB / ABD standartlarına göre faturalandırma",
+        "desktopTile1": "<span class=\"text-font-kojami\">KOJAMI</span> ile KOBİ'ler (küçük ve orta Ölçekli işletmeler) için üretim ortaklığı",
+        "desktopTile2": "KOBİ'ler için parça üretimi",
+        "desktopTile3": "KOBİ'ler için komple montaj üretimi",
+        "desktopTile4": "İştiraklerin ipucu",
+        "desktopTile5": "Yerel şirketlerle ortak girişim",
+        "desktopTile6": "AB / ABD standartlarına göre faturalandırma",
+
+        "whySerbText": "Neden SIRBISTAN?",
+        "location": "yer",
+        "location1":
+            "Sırbistan'ın uygun coğrafi konumu  müşterilerinize yakınlık sunar. İyi geliştirilmiş nakliye ve lojistik altyapısı, çoğu AB pazarına 24 saatten daha kısa sürede hizmet vermelerini sağlar.",
+        "location2": "Bu nedenle <span class=\"text-font-kojami\">KOJAMI</span>, rekabet gücünüzü küresel düzeyde önemli ölçüde geliştirme fırsatı sunar.",
+        "freeTrade": "Serbest Ticaret Anlaşması",
+        "freeTrade1":
+            "Sırbistan, Karadeniz Ekonomik İşbirliği ve Orta Avrupa Serbest Ticaret Anlaşması (CEFTA) üyesidir. Sırbistan, BDT dışında hem Rusya hem de Avrasya Ekonomik Birliği (EAEU) ile serbest ticaret anlaşması olan tek Avrupa ülkesidir.",
+        "freeTrade2":
+            "Diğer bazı serbest ticaret anlaşmaları şu anda Kazakistan, Beyaz Rusya ve Türkiye ile ve ayrıca Avrupa Serbest Ticaret Birliği ile yürürlüktedir. Bu, Sırp ekonomisinin piyasalarını büyük ölçüde liberalleştirilmiş koşullar altında toplam yaklaşık 1,1 milyar insana açar.",
+
+        "offerHead": "Teklifimiz",
+        "offerLine1": "We check your cost saving potentials",
+        "offerText1":
+            "Yapilacak analize, aynı kalite düzeyinde, Sırbistan'da ortaya çıkacak maliyetlerle karşılaştırmada dahildir. Bu size Sırbistan'da yada Sırbistan'a , üretim yada dış kaynak sağlama kararınız için ticari bir temel sağlar.",
+        "offerPhase1": "1.Aşama : Müşterinin yerinde maliyet analizi",
+        "offerPhase2": "2. Aşama: Sırbistan'daki maliyetlerin karşılaştırılması",
+        "offerLin2": "Uygulama yönetimi",
+        "offerText2":
+            "Projenizin uygulanmasında size yoğun destek sağliyoruz , Sizinle yakın bir  işbirliği içinde, uygulama süreci için  hedefleri ve kesin çerçeveyi belirliyoruz.",
+        "offerPhase3": "3. Aşama: Doğrulama ve uygulama yönetimi",
+        "offerText3":
+            "Bu noktada, ya sizin için kısmi görevler üstleniyoruz ya da ; Sırbistan'da bir lokasyon bulmaktan, üretimi kurmaya, işe almaya ve gerekli izinleri almaya kadar dış kaynak kullanımının tüm uygulamalarını üstleniyoruz.",
+
+        "arrowText1": "Proje hedeflerinin doğrulanması",
+        "arrow1point1": "Sorumlu kişilerle konsept aşamasında kalitatif ve kantitatif olarak calisma",
+        "arrow1point2": "Hedeflere bağlılık",
+        "arrowText2": "Uygulama koordinasyonu",
+        "arrow2point1": "Ölçülerin tanımı",
+        "arrow2point2": "Program ve gereksinimler",
+        "arrow2point3": "Nitel, nicel hedefler; sorumluluklar",
+        "arrow2point4": "Taahhüt",
+        "arrowText3": "Uygulama hedeflerinin <span class=\"text-font-kojami text-3xl\">KOJAMI</span>'ye aktarılması",
+        "arrow3point1": "Önlemler ve görev paketleri",
+        "arrow3point2": "Gerekli Zaman",
+        "arrow3point3": "Kalite hedefleri",
+        "arrow3point4": "Sonuçlar",
+        "arrow3point5": "Sonuçlarin KOJAMI tarafından uygulama ilerlemesinin dokümantasyonu",
+        "arrowText4": "müşteriye gerçek zamanlı bilgi",
+        "arrow4point1": "Durum uygulaması",
+        "arrow4point2": "Proje maliyetleri",
+        "arrow4point3": "Jour – Fixes in operasyonel kontrolü",
+        "arrow4point4": "Mali hedef başarısının doğrulanması",
+        "arrowText5": "Süreç kontrolü",
+        "arrow5point1": "Tutarlı uygulama  kontrolü",
+        "arrow5point2": "Sonuçların dokümantasyonu",
+
+        "contactHead": "İletişim",
+        "contact1": "İlginizi çektiysek, <span class=\"text-font-kojami text-3xl\">KOJAMI</span>'nin hizmetlerinin kapsamı hakkında daha fazla bilgi almak için bizimle iletişime geçmekten çekinmeyin.",
+        "contact2": "Tüm sorularınızı yanıtlamaktan mutluluk duyarız ve şirketimizle çalışmanın belirli avantajları hakkında kişisel bir sunum için her zaman hazırız.",
+        "contactCard1Line1": "Almanya | Avusturya",
+        "contactCard1Line2": "İsviçre",
+        "contactCard2Line1": "Çin | Japonya",
+        "contactCard2Line2": "Singapur",
+        "contactCard3": "Pazarlama",
+        "contactCard4": "Ofis",
+        "partnerHead": "Ortaklar",
+        "imprint1": "Künye",
+        "imprint2": "Gizlilik Politikası",
+    },
+    "ar":{
+        "navHomeText": "الصفحة الرئيسية",
+        "navAboutUsText": "من نحن",
+        "navPossibilitiesText": "الاحتمالات",
+        "navWhySerbiaText": "لماذا صربيا؟",
+        "navOfferText": "عرضنا لك",
+        "navContactText": "اتصل بنا",
+        "navPartnersText": "شركاء",
+        "navSlideHomeText": "الصفحة الرئيسية",
+        "navSlideAboutUsText": "من نحن",
+        "navSlidePossibilitiesText": "الاحتمالات",
+        "navSlideWhySerbiaText": "لماذا صربيا؟",
+        "navSlideOfferText": "عرضنا لك",
+        "navSlideContactText": "اتصل بنا",
+        "navSlidePartnersText": "شركاء",
+
+        "aboutUs1": "<span class=\"text-font-kojami\">KOJAMI</span> International Consulting",
+        "aboutUs15": "",
+        "aboutUs2":
+            "وضعت ومقرها بلغراد / صربيا ، هدفًا يتمثل في دعم العملاء من جميع أنحاء العالم في إيجاد حلول مربحة .لعملياتهم التجارية كثيفة التكلفة وجعلها أكثر كفاءة ونجاحًا",
+
+        "possibilitiesHead": "الاحتمالات",
+        "possibilitiesSub": "تعهيد العمليات التجارية إلى صربيا",
+        "mobileTile1": "شراكة التصنيع للشركات الصغيرة والمتوسطة (الشركات الصغيرة والمتوسطة) مع<span class=\"text-font-kojami\">KOJAMI</span>",
+        "mobileTile2": "إنتاج قطع الغيار للشركات الصغيرة والمتوسطة ",
+        "mobileTile3": "استكمال إنتاج التجميعات للشركات الصغيرة والمتوسطة ",
+        "mobileTile4": "تأسيس الشركات التابعة ",
+        "mobileTile5": "مشروع مشترك مع شركات محلية ",
+        "mobileTile6": "المحاسبة وفقًا لمعايير الاتحاد الأوروبي / الولايات المتحدة",
+        "desktopTile1": "شراكة التصنيع للشركات الصغيرة والمتوسطة (الشركات الصغيرة والمتوسطة) مع<span class=\"text-font-kojami\">KOJAMI</span>",
+        "desktopTile2": "إنتاج قطع الغيار للشركات الصغيرة والمتوسطة ",
+        "desktopTile3": "استكمال إنتاج التجميعات للشركات الصغيرة والمتوسطة ",
+        "desktopTile4": "تأسيس الشركات التابعة ",
+        "desktopTile5": "مشروع مشترك مع شركات محلية ",
+        "desktopTile6": "المحاسبة وفقًا لمعايير الاتحاد الأوروبي / الولايات المتحدة",
+
+        "whySerbText": "لماذا صربيا؟",
+        "location": "موقعك",
+        "location1": " يوفر لك الموقع الجغرافي الأمثل لصربيا القرب من عملائك." +
+            "تمكنهم البنية التحتية المتطورة للنقل والخدمات اللوجستية من خدمة معظم أسواق الاتحاد الأوروبي في أقل من 24 ساعة.",
+        "location2": "KOJAMI وبالتالي، تقدم" +
+            "الفرصة لتحسين قدرتك التنافسية بشكل كبير على المستوى العالمي.",
+        "freeTrade": "اتفاقية التجارة الحرة",
+        "freeTrade1":" صربيا عضو في التعاون الاقتصادي للبحر الأسود واتفاقية التجارة الحرة لأوروبا الوسطى (CEFTA)" +
+            ". صربيا هي الدولة الأوروبية الوحيدة خارج رابطة الدول المستقلة التي لديها اتفاقية تجارة حرة مع كل من روسيا " +
+            "والاتحاد الاقتصادي الأوراسي (EAEU)" +
+            ". العديد من اتفاقيات التجارة الحرة الأخرى سارية المفعول حاليًا مع كازاخستان وبيلاروسيا وتركيا ، وكذلك مع رابطة " +
+            "التجارة الحرة الأوروبية",
+        "freeTrade2":
+            "سيؤدي هذا إلى فتح أسواق الاقتصاد الصربي في ظل ظروف متحررة إلى حد كبير لما مجموعه حوالي 1.1 تريليون ",
+
+        "offerHead": "عرضنا لك",
+        "offerLine1": "نتحقق من إمكانية توفير التكلفة لديك",
+        "offerText1":
+            "بعد أن تقرر مراجعة إمكانات التوفير في التكاليف ، يمكنك أولاً تكليفنا بتطوير تحليل تكلفة منتجك أو عملية لحالتك المحددة. يتضمن التحليل مقارنة بالتكاليف التي ستنشأ في صربيا ، بالطبع بنفس مستوى الجودة. يمنحك هذا أساسًا تجاريًا لقرارك بالإنتاج / الاستعانة بمصادر خارجيةفي / إلى صربيا.",
+        "offerPhase1":  "المرحلة الأولى: تحليل التكلفة في موقع العميل.",
+        "offerPhase2": " المرحلة 2: مقارنة التكاليف في صربيا.",
+        "offerLin2": "إدارة التنفيذ",
+        "offerText2":
+            "سنوفر لك بعد ذلك دعمًا مكثفًا في تنفيذ مشروعك. بالتعاون الوثيق معك ، نضع الأهداف المحددة والإطار الدقيق لعملية التنفيذ. ",
+        "offerPhase3": "المرحلة الثالثة: إدارة المصادقة والتنفيذ",
+        "offerText3":
+            " إما أن نتولى مهام جزئية نيابة عنك أو التنفيذ الكامل للاستعانة بمصادر خارجية ، بدءًا من العثور على موقع وإنشاء الإنتاج وحتى التوظيف والحصول على التصاريح اللازمة في صربيا.",
+
+        "arrowText1": "التحقق من صحة أهداف المشروع",
+        "arrow1point1": "نوعيًا وكميًا في مرحلة المفهوم مع المسؤولين",
+        "arrow1point2": "الالتزام بالأهداف",
+        "arrowText2": "تنسيق التنفيذ",
+        "arrow2point1": "تعريف الإجراءات.",
+        "arrow2point2": "الجدول الزمني والمتطلبات.",
+        "arrow2point3": "الأهداف والمسؤوليات النوعية والكمية.",
+        "arrow2point4": "التزام.",
+        "arrowText3": "نقل أهداف التنفيذ إلى <span class=\"text-font-kojami text-3xl\">KOJAMI</span>",
+        "arrow3point1": "الإجراءات وحزم المهام",
+        "arrow3point2": "الوقت اللازم",
+        "arrow3point3": "أهداف الجودة.",
+        "arrow3point4": "النتائج.",
+        "arrow3point5": "توثيق التقدم المحرز في التنفيذ من قبل  KOJAMI",
+        "arrowText4": "معلومات \"الوقت الحقيقي\" للعميل",
+        "arrow4point1": "حالة التنفيذ",
+        "arrow4point2": "تكاليف المشروع.",
+        "arrow4point3": "اجتماعات ومناقشات منتظمة.",
+        "arrow4point4": "التحقق من تحقيق الهدف المالي",
+        "arrowText5": "مراقبة",
+        "arrow5point1": "التحكم المتسق في التنفيذ.",
+        "arrow5point2": "توثيق النتائج.",
+
+        "contactHead": "اتصل بنا",
+        "contact1": "إذا أثار اهتمامك " +
+            "فالرجاء عدم التردد في الاتصال بنا للحصول على مزيد من المعلومات حول نطاق خدمات" +
+            ". <span class=\"text-font-kojami text-3xl\">KOJAMI</span>’s scope of services.",
+        "contact2": "يسعدنا الرد على جميع أسئلتك ونكون دائمًا متاحين لتقديم عرض شخصي حول المزايا المحددة للعمل مع شركتنا",
+        "contactCard1Line1": "ألمانيا | النمسا",
+        "contactCard1Line2": "سويسرا",
+        "contactCard2Line1": "الصين | اليابان",
+        "contactCard2Line2": "سنغافورة",
+        "contactCard3": "تسويق",
+        "contactCard4": "مكتب. مقر. مركز",
+        "partnerHead": "شركاء",
+        "imprint1": "بصمة",
+        "imprint2": "سياسة خاصة",
+    },
 }
 
 
@@ -668,6 +866,18 @@ function trans (lang) {
             $("#" + languageIds[i]).html(dictionary.ir[languageIds[i]])
         }
     }
+    if (lang === "tr") {
+        switchImages("tr")
+        for (i = 0; i < languageIds.length; i++) {
+            $("#" + languageIds[i]).html(dictionary.tr[languageIds[i]])
+        }
+    }
+    if (lang === "ar") {
+        switchImages("ar")
+        for (i = 0; i < languageIds.length; i++) {
+            $("#" + languageIds[i]).html(dictionary.ar[languageIds[i]])
+        }
+    }
 }
 
 function switchImages(lang){
@@ -680,6 +890,8 @@ function switchImages(lang){
             $("#"+oldLanguageIds[i]+"Ir").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[i]+"Rs").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[i]+"Cn").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[i]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[i]+"Ar").addClass("hidden").removeClass("block")
         }
     }
     if(lang === "de"){
@@ -690,6 +902,8 @@ function switchImages(lang){
             $("#"+oldLanguageIds[id]+"Ir").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[id]+"Rs").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[id]+"De").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[id]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[id]+"Ar").addClass("hidden").removeClass("block")
         }
     }
     if(lang === "en"){
@@ -700,6 +914,8 @@ function switchImages(lang){
             $("#"+oldLanguageIds[ic]+"Ir").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ic]+"Rs").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ic]+"En").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[ic]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ic]+"Ar").addClass("hidden").removeClass("block")
         }
     }
     if(lang === "rs"){
@@ -710,6 +926,8 @@ function switchImages(lang){
             $("#"+oldLanguageIds[is]+"Ir").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[is]+"Ru").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[is]+"Rs").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[is]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[is]+"Ar").addClass("hidden").removeClass("block")
         }
     }
     if(lang === "ru"){
@@ -720,6 +938,8 @@ function switchImages(lang){
             $("#"+oldLanguageIds[ir]+"Ir").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ir]+"Rs").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ir]+"Ru").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[ir]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ir]+"Ar").addClass("hidden").removeClass("block")
         }
     }
     if(lang === "ir"){
@@ -730,6 +950,32 @@ function switchImages(lang){
             $("#"+oldLanguageIds[ii]+"Ru").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ii]+"Rs").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ii]+"Ir").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[ii]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ar").addClass("hidden").removeClass("block")
+        }
+    }
+    if(lang === "tr"){
+        for (ii = 0; ii <= oldLanguageIds.length; ii++){
+            $("#"+oldLanguageIds[ii]+"Cn").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"De").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"En").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ru").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Rs").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Tr").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[ii]+"Ir").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ar").addClass("hidden").removeClass("block")
+        }
+    }
+    if(lang === "ar"){
+        for (ii = 0; ii <= oldLanguageIds.length; ii++){
+            $("#"+oldLanguageIds[ii]+"Cn").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"De").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"En").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ru").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Rs").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ar").addClass("block").removeClass("hidden")
+            $("#"+oldLanguageIds[ii]+"Tr").addClass("hidden").removeClass("block")
+            $("#"+oldLanguageIds[ii]+"Ir").addClass("hidden").removeClass("block")
         }
     }
 }
