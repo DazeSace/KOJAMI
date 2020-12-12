@@ -676,10 +676,10 @@ const dictionary = {
             "Diğer bazı serbest ticaret anlaşmaları şu anda Kazakistan, Beyaz Rusya ve Türkiye ile ve ayrıca Avrupa Serbest Ticaret Birliği ile yürürlüktedir. Bu, Sırp ekonomisinin piyasalarını büyük ölçüde liberalleştirilmiş koşullar altında toplam yaklaşık 1,1 milyar insana açar.",
 
         "offerHead": "Teklifimiz",
-        "offerLine1": "We check your cost saving potentials",
+        "offerLine1": "Maliyet tasarrufu potansiyelinizi kontrol ediyoruz",
         "offerText1":
             "Yapilacak analize, aynı kalite düzeyinde, Sırbistan'da ortaya çıkacak maliyetlerle karşılaştırmada dahildir. Bu size Sırbistan'da yada Sırbistan'a , üretim yada dış kaynak sağlama kararınız için ticari bir temel sağlar.",
-        "offerPhase1": "1.Aşama : Müşterinin yerinde maliyet analizi",
+        "offerPhase1": "1. Aşama: Müşterinin yerinde maliyet analizi",
         "offerPhase2": "2. Aşama: Sırbistan'daki maliyetlerin karşılaştırılması",
         "offerLin2": "Uygulama yönetimi",
         "offerText2":
@@ -814,7 +814,7 @@ const dictionary = {
         "contactHead": "اتصل بنا",
         "contact1": "إذا أثار اهتمامك " +
             "فالرجاء عدم التردد في الاتصال بنا للحصول على مزيد من المعلومات حول نطاق خدمات" +
-            ". <span class=\"text-font-kojami text-3xl\">KOJAMI</span>’s scope of services.",
+            ". <span class=\"text-font-kojami text-3xl\">KOJAMI</span>",
         "contact2": "يسعدنا الرد على جميع أسئلتك ونكون دائمًا متاحين لتقديم عرض شخصي حول المزايا المحددة للعمل مع شركتنا",
         "contactCard1Line1": "ألمانيا | النمسا",
         "contactCard1Line2": "سويسرا",
