@@ -14,7 +14,7 @@
 <body>
 <div class="w-full bg-white shadow-lg text-kojami-blue text-font-business select-none sm-navHeight md-navHeight lg:h-16" id="navbar">
     <div class="flex justify-between h-full" id="innerNavBar">
-        <div class="flex w-1/4 mt-1 mb-2 cursor-pointer" id="navBarLogoContainer" onclick="window.location.href = 'https://kojami.eu/';">
+        <div class="flex w-1/4 mt-1 mb-2 cursor-pointer" id="navBarLogoContainer" onclick="window.location.href = '/';">
             <img class="h-24 lg:h-12" src="img/svg/vektor-logo.svg">
             <div class="" id="navBalLogoText">
                 <h1 class="text-font-kojami text-align-center-navbar text-6xl lg:text-4xl">KOJAMI</h1>
@@ -1120,7 +1120,7 @@
                 </div>
                 <div>
                     <div class="flex mt-2">
-                        <div class="flex flex-col w-2/5 block">
+                        <div class="flex flex-col w-2/5 block order-1" id="arrow1">
                             <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
                                 <div class="flex flex-col bg-kojami-blue text-white">
                                     <div class="flex flex-col">
@@ -1135,23 +1135,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-3/5">
+                        <div class="flex flex-col w-3/5 order-2">
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow1point1">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right1">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow1point1">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left1">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow1point2">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right2">
+                                <p class="text-3xl lg:text-2xl block  w-full " id="arrow1point2">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left2">
                             </div>
                         </div>
                     </div>
                     <div class="flex mt-2">
-                        <div class="flex flex-col w-2/5 block">
+                        <div class="flex flex-col w-2/5 block order-1" id="arrow2">
                             <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
                                 <div class="flex flex-col bg-kojami-blue text-white">
                                     <div class="flex flex-col">
@@ -1166,35 +1168,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-3/5">
+                        <div class="flex flex-col w-3/5 order-2">
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow2point1">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right3">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow2point1">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left3">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow2point2">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right4">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow2point2">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left4">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow2point3">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right5">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow2point3">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left5">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow2point4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right6">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow2point4">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left6">
                             </div>
                         </div>
                     </div>
                     <div class="flex mt-2">
-                        <div class="flex flex-col w-2/5 block">
+                        <div class="flex flex-col w-2/5 block order-1" id="arrow3">
                             <div class="flex flex-col mx-auto w-11/12 arrowBoxHover mt-1">
                                 <div class="flex flex-col bg-kojami-blue text-white">
                                     <div class="flex flex-col">
@@ -1209,41 +1215,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-3/5">
+                        <div class="flex flex-col w-3/5 order-2">
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow3point1">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right7">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow3point1">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left7">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow3point2">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right8">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow3point2">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left8">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow3point3">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right9">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow3point3">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left9">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow3point4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right10">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow3point4">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left10">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow3point5">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right11">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow3point5">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left11">
                             </div>
                         </div>
                     </div>
                     <div class="flex mt-2">
-                        <div class="flex flex-col w-2/5 block">
+                        <div class="flex flex-col w-2/5 block order-1" id="arrow4">
                             <div class="flex flex-col mx-auto w-4/5 arrowBoxHover">
                                 <div class="flex flex-col bg-kojami-blue text-white">
                                     <div class="flex flex-col">
@@ -1258,35 +1269,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-3/5">
+                        <div class="flex flex-col w-3/5 order-2">
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow4point1">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right12">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow4point1">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left12">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow4point2">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right13">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow4point2">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left13">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow4point3">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right14">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow4point3">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left14">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow4point4">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right15">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow4point4">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left15">
                             </div>
                         </div>
                     </div>
                     <div class="flex mt-2">
-                        <div class="flex flex-col w-2/5 block">
+                        <div class="flex flex-col w-2/5 block order-1" id="arrow5">
                             <div class="flex flex-col mx-auto w-4/5 arrowBoxHover mt-1">
                                 <div class="flex flex-col bg-kojami-blue text-white">
                                     <div class="flex flex-col">
@@ -1301,18 +1316,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-3/5">
+                        <div class="flex flex-col w-3/5 order-2">
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow5point1">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right16">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow5point1">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left16">
                             </div>
                             <div class="flex ml-4">
-                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow">
-                                <p class="text-3xl lg:text-2xl block" id="arrow5point2">
+                                <img src="img/svg/right-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1" alt="arrow" id="arrow-right17">
+                                <p class="text-3xl lg:text-2xl block w-full " id="arrow5point2">
 
                                 </p>
+                                <img src="img/svg/left-arrow.svg" class="mt-4 lg:mt-2 h-5 mr-1 hidden" alt="arrow" id="arrow-left17">
                             </div>
                         </div>
                     </div>
@@ -1445,10 +1462,10 @@
                 </div>
                 <div class="flex flex-col w-1/3 text-2xl lg:text-base block" id="footerEn">
                     <div class="text-center offerBox">
-                        <a href="#" class="" id="imprint1"></a>
+                        <a href="imprint" class="" id="imprint1"></a>
                     </div>
                     <div class="text-center mt-2 offerBox">
-                        <a href="#" class="" id="imprint2"></a>
+                        <a href="privacy-policy" class="" id="imprint2"></a>
                     </div>
                     <div class="mt-12 offerBox cursor-pointer">
                         <img class="w-1/4 mx-auto" src="img/svg/vektor-logo-white.svg">

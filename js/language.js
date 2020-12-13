@@ -828,52 +828,130 @@ const dictionary = {
     },
 }
 
+const swapster = [
+    "location", "location1", "location2",
+    "freeTrade", "freeTrade1", "freeTrade2",
+    "offerLine1", "offerText1", "offerPhase1", "offerPhase2", "offerLin2", "offerText2", "offerPhase3", "offerText3",
+    "arrow1point1", "arrow1point2",
+    "arrow2point1", "arrow2point2", "arrow2point3", "arrow2point4",
+    "arrow3point1", "arrow3point2", "arrow3point3", "arrow3point4", "arrow3point5",
+    "arrow4point1", "arrow4point2", "arrow4point3", "arrow4point4",
+    "arrow5point1", "arrow5point2",
+]
+
+const leftarrows = [
+    "arrow-left1",
+    "arrow-left2",
+    "arrow-left3",
+    "arrow-left4",
+    "arrow-left5",
+    "arrow-left6",
+    "arrow-left7",
+    "arrow-left8",
+    "arrow-left9",
+    "arrow-left10",
+    "arrow-left11",
+    "arrow-left12",
+    "arrow-left13",
+    "arrow-left14",
+    "arrow-left15",
+    "arrow-left16",
+    "arrow-left17"
+]
+
+const rightarrows = [
+    "arrow-right1",
+    "arrow-right2",
+    "arrow-right3",
+    "arrow-right4",
+    "arrow-right5",
+    "arrow-right6",
+    "arrow-right7",
+    "arrow-right8",
+    "arrow-right9",
+    "arrow-right10",
+    "arrow-right11",
+    "arrow-right12",
+    "arrow-right13",
+    "arrow-right14",
+    "arrow-right15",
+    "arrow-right16",
+    "arrow-right17"
+]
+
+const blueArrows = [
+    "arrow1", "arrow2", "arrow3", "arrow4", "arrow5"
+]
 
 function trans (lang) {
     if (lang === "en") {
         switchImages("en")
+        leftToRightSwapperoo("en")
+        leftarrowsvisible()
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.en[languageIds[i]])
         }
     }
     if (lang === "de") {
         switchImages("de")
+        leftToRightSwapperoo("de")
+        leftarrowsvisible()
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.de[languageIds[i]])
         }
     }
     if (lang === "cn") {
         switchImages("cn")
+        leftToRightSwapperoo("cn")
+        leftarrowsvisible()
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.cn[languageIds[i]])
         }
     }
     if (lang === "ru") {
         switchImages("ru")
+        leftToRightSwapperoo("ru")
+        leftarrowsvisible()
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.ru[languageIds[i]])
         }
     }
     if (lang === "rs") {
         switchImages("rs")
+        leftarrowsvisible()
+        leftToRightSwapperoo("rs")
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.rs[languageIds[i]])
         }
     }
     if (lang === "ir") {
         switchImages("ir")
+        leftToRightSwapperoo("ir")
+        rightarrowsvisible()
+        arrowPos(3)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.ir[languageIds[i]])
         }
     }
     if (lang === "tr") {
         switchImages("tr")
+        leftToRightSwapperoo("tr")
+        leftarrowsvisible()
+        arrowPos(1)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.tr[languageIds[i]])
         }
     }
     if (lang === "ar") {
         switchImages("ar")
+        leftToRightSwapperoo("ar")
+        rightarrowsvisible()
+        arrowPos(3)
         for (i = 0; i < languageIds.length; i++) {
             $("#" + languageIds[i]).html(dictionary.ar[languageIds[i]])
         }
@@ -976,6 +1054,76 @@ function switchImages(lang){
             $("#"+oldLanguageIds[ii]+"Ar").addClass("block").removeClass("hidden")
             $("#"+oldLanguageIds[ii]+"Tr").addClass("hidden").removeClass("block")
             $("#"+oldLanguageIds[ii]+"Ir").addClass("hidden").removeClass("block")
+        }
+    }
+}
+
+function leftToRightSwapperoo(lang){
+    if(lang === "cn"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "de"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "en"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "rs"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "ru"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "ir"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-right").removeClass("text-left").removeClass("text-justify")
+        }
+    }
+    if(lang === "tr"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-left").removeClass("text-right")
+        }
+    }
+    if(lang === "ar"){
+        for (i = 0; i <= swapster.length; i++) {
+            $("#"+swapster[i]).addClass("text-right").removeClass("text-left").removeClass("text-justify")
+        }
+    }
+}
+
+function leftarrowsvisible(){
+    for (i = 0; i <= rightarrows.length; i++) {
+        $("#"+rightarrows[i]).addClass("block").removeClass("hidden")
+        $("#"+leftarrows[i]).addClass("hidden").removeClass("block")
+    }
+}
+
+function rightarrowsvisible(){
+    for (i = 0; i <= leftarrows.length; i++) {
+        $("#"+leftarrows[i]).addClass("block").removeClass("hidden")
+        $("#"+rightarrows[i]).addClass("hidden").removeClass("block")
+    }
+}
+
+function arrowPos(pos){
+    if(pos === 1){
+        for (i = 0; i <= blueArrows.length; i++) {
+            $("#"+blueArrows[i]).addClass("order-1").removeClass("order-3")
+        }
+    }
+    if(pos === 3){
+        for (i = 0; i <= blueArrows.length; i++) {
+            $("#"+blueArrows[i]).addClass("order-3").removeClass("order-1")
         }
     }
 }
