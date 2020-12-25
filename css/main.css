@@ -182,3 +182,6 @@
 .h-arrow{
     height: 20%;
 }
+.flag{
+    min-width: 20px;
+}
