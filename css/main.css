@@ -183,5 +183,6 @@
     height: 20%;
 }
 .flag{
-    min-width: 20px;
+    width: 30px;
+    min-width: 30px;
 }
