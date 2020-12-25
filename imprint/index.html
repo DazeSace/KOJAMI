@@ -21,6 +21,121 @@
                 <p class="text-serif -mt-4 text-md lg:text-xs">Designer of Your Success</p>
             </div>
         </div>
+        <div class="flex w-1/2 justify-end">
+            <div class="uppercase text-md lg:mr-16 font-semibold hidden lg:flex" id="navBarElementsContainer">
+                <div class="flex flex-shrink-0">
+                    <a href="/#home" id="navHome">
+                        <div class="h-full px-4 navBarElement" id="navHomeBox">
+                            <p class="pt-4" id="navHomeText">Home</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#aboutUs" id="navAboutUs">
+                        <div class="h-full px-4 navBarElement" id="navAboutUsBox">
+                            <p class="pt-4" id="navAboutUsText">About Us</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#possibilities" id="navPossibilities">
+                        <div class="h-full px-4 navBarElement" id="navPossibilitiesBox">
+                            <p class="pt-4 block" id="navPossibilitiesText">Possibilities</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#whySerb" id="navWhySerb">
+                        <div class="h-full px-4 navBarElement" id="navWhySerbBox">
+                            <p class="pt-4" id="navWhySerbiaText">Why Serbia?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#offer" id="navOffer">
+                        <div class="h-full px-4 navBarElement" id="navOfferBox">
+                            <p class="pt-4 block" id="navOfferText">Offer</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#contact" id="navContact">
+                        <div class="h-full px-4 navBarElement" id="navContactBox">
+                            <p class="pt-4 block" id="navContactText">Contact</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-shrink-0">
+                    <a href="/#partner" id="navPartner">
+                        <div class="h-full px-4 navBarElement" id="navPartnerBox">
+                            <p class="pt-4 block" id="navPartnersText">Partners</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-1/4 lg:w-1/12 cursor-pointer justify-center mr-10 lg:hidden block">
+            <div class="flex justify-end">
+                <div class="w-1/2" ontouchstart="openNav()">
+                    <img src="../img/svg/menu.svg" alt="lang" class="px-3 mt-4 rounded-lg border-4 border-kojami-blue" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-between">
+        <div class="flex w-1/4 mt-1 mb-2 invisible">
+            <img class="h-24 lg:h-12" src="../img/svg/vektor-logo.svg">
+            <div class="" >
+                <h1 class="text-font-kojami text-align-center-navbar text-6xl lg:text-4xl">KOJAMI</h1>
+                <p class="text-serif -mt-4 text-md lg:text-xs">Designer of Your Success</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="text-5xl text-font-business truncate text-kojami-blue pt-6 sidenav">
+    <div class="flex">
+        <div class="" onclick="closeNav()">
+            <img src="../img/svg/cancel.svg" class="float-right object-contain w-1/6 mr-4">
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <div class="uppercase">
+            <a href="/#home" id="navSlideHome" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideHomeBox">
+                    <p class="py-2 block" id="navSlideHomeText">Home</p>
+                </div>
+            </a>
+            <a href="/#aboutUs" id="navSlideAboutUs" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideAboutUsBox">
+                    <p class="py-2 block" id="navSlideAboutUsText">About Us</p>
+                </div>
+            </a>
+            <a href="/#possibilities" id="navSlidePossibilities" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlidePossibilitiesBox">
+                    <p class="py-2 block" id="navSlidePossibilitiesText">Possibilities</p>
+                </div>
+            </a>
+            <a href="/#whySerb" id="navSlideWhySerb" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideWhySerbBox">
+                    <p class="py-2 block" id="navSlideWhySerbiaText">Why Serbia?</p>
+                </div>
+            </a>
+            <a href="/#offer" id="navSlideOffer">
+                <div class="h-full px-4 navBarElement" onclick="closeNav()" id="navSlideOfferBox">
+                    <p class="py-2 block" id="navSlideOfferText">Offer</p>
+                </div>
+            </a>
+            <a href="/#contact" id="navSlideContact" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlideContactBox">
+                    <p class="py-2 block" id="navSlideContactText">Contact</p>
+                </div>
+            </a>
+            <a href="/#partner" id="navSlidePartner" onclick="closeNav()">
+                <div class="h-full px-4 navBarElement" id="navSlidePartnerBox">
+                    <p class="py-2 block" id="navSlidePartnersText">Partners</p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 <div class="max-w mx-auto text-kojami-blue text-font-business select-none tracking-tighter md-navmt lg:mt-16">
@@ -193,19 +308,19 @@
                 </div>
                 <div class="flex flex-col w-1/3 text-2xl lg:text-base block" id="footerEn">
                     <div class="text-center offerBox">
-                        <a href="imprint" class="" id="imprint1"></a>
+                        <a href="../imprint" class="" id="imprint1">Imprint</a>
                     </div>
                     <div class="text-center mt-2 offerBox">
-                        <a href="privacy-policy" class="" id="imprint2"></a>
+                        <a href="../privacy-policy" class="" id="imprint2">Privacy Policy</a>
                     </div>
                     <div class="mt-12 offerBox cursor-pointer">
-                        <img class="w-1/4 mx-auto" src="img/svg/vektor-logo-white.svg">
+                        <img class="w-1/4 mx-auto" src="../img/svg/vektor-logo-white.svg">
                     </div>
                 </div>
                 <div class="flex w-1/3 flex-col">
                     <p class="mx-auto text-2xl lg:text-base text-center">made by</p>
                     <div class="mx-auto w-1/3">
-                        <img src="img/svg/XXX.svg" class="cursor-pointer offerBox mx-auto">
+                        <img src="../img/svg/XXX.svg" class="cursor-pointer offerBox mx-auto">
                     </div>
                 </div>
             </div>
