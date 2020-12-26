@@ -58,7 +58,7 @@ const dictionary = {
         "mobileTile6": "Accounting according to EUROPEAN / US standards",
         "desktopTile1": "Manufacturing partnership for SMEs with <span class=\"text-font-kojami text-xl tracking-wide\">KOJAMI</span>",
         "desktopTile2": "Parts production for SMEs <br> (external manufacturer)",
-        "desktopTile3": "Complete manufacturing of assemblies for SMEs <br> (external manufacturer)",
+        "desktopTile3": "Complete manufacturing of assemblies for SMEs (external manufacturer)",
         "desktopTile4": "Subsidiary founding",
         "desktopTile5": "Joint venture with local companies",
         "desktopTile6": "Accounting according to EUROPEAN / US standards",
